@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\server_addon"
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "pwa-node",
+				"request": "launch",
+				"name": "Launch Program",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"program": "f:\\Projects\\dnf_calculator\\src\\server\\index.ts",
+				"__workspaceFolder": "f:\\Projects\\dnf_calculator\\src\\server",
+				"outFiles": [
+					"${workspaceFolder}/**/*.js"
+				]
+			}
+		]
+	}
+}

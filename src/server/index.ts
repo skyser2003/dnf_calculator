@@ -1,4 +1,4 @@
-import DnfAddon from "../server_addon/lib/binding";
+import { DnfCalculatorAddon } from "../server_addon/lib/binding";
 
-const addon  = new DnfAddon("skyser2003");
+const addon  = new DnfCalculatorAddon("skyser2003");
 addon.greet("stranger");

@@ -5,7 +5,7 @@ interface IDnfCalculatorAddonNative
     greet(strName: string): string;
 };
 
-class DnfCalculatorAddon {
+export class DnfCalculatorAddon {
     constructor(name: string) {
         this._addonInstance = new addon.DnfCalculatorAddon(name)
     }
@@ -17,5 +17,3 @@ class DnfCalculatorAddon {
     // private members
     private _addonInstance: IDnfCalculatorAddonNative;
 }
-
-export = DnfCalculatorAddon;
