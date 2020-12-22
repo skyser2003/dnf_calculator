@@ -1,0 +1,25 @@
+{
+  "name": "dnf_calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyser2003/dnf_calculator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skyser2003/dnf_calculator/issues"
+  },
+  "gypfile": true,
+  "homepage": "https://github.com/skyser2003/dnf_calculator#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.14",
+    "node-addon-api": "^3.1.0",
+    "node-gyp": "^7.1.2"
+  }
+}

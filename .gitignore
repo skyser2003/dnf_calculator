@@ -1,0 +1,13 @@
+# Nodejs
+node_modules/
+*.js
+*.js.map
+
+# Visual Studio
+.vs/
+x64/
+Debug/
+Release/
+
+# Visual Studio Code
+.vscode/

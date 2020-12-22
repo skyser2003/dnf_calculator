@@ -1,0 +1,28 @@
+{
+    "main": "lib/binding.js",
+    "dependencies": {
+        "node-addon-api": "^1.1.0"
+    },
+    "scripts": {
+        "pretest": "tsc",
+        "test": "node --napi-modules ./test/test_binding.js"
+    },
+    "gypfile": true,
+    "name": "dnf_calculator_addon",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@types/node": "^7.0.22",
+        "typescript": "^2.3.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/skyser2003/dnf_calculator.git"
+    },
+    "author": "Seung Ho Jang",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/skyser2003/dnf_calculator/issues"
+    },
+    "homepage": "https://github.com/skyser2003/dnf_calculator#readme",
+    "description": ""
+}
