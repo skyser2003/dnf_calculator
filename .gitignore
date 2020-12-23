@@ -11,3 +11,6 @@ Release/
 
 # Visual Studio Code
 .vscode/
+
+# Project specific
+src/server_addon/build/
