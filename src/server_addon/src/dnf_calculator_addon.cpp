@@ -1,5 +1,4 @@
-#include "stdafx.h"
-#include "dnf_calculator_addon-native.h"
+#include "dnf_calculator_addon.h"
 
 using namespace Napi;
 

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="stdafx">
+      <UniqueIdentifier>{6273cbb6-d2c2-4e29-af40-997de637aac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="equipment">
+      <UniqueIdentifier>{6c03fc61-8d3c-4633-80ea-0dffc0f2b18d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stat">
+      <UniqueIdentifier>{98db5323-9d3a-4c00-8ca0-8238dd07c835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="character">
+      <UniqueIdentifier>{af55bc94-d337-41a5-9a2a-524a12620878}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx\stdafx.h">
+      <Filter>stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\character.h">
+      <Filter>character</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enum_equipment.h">
+      <Filter>equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enum_stat.h">
+      <Filter>stat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\equipment.h">
+      <Filter>equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stat.h">
+      <Filter>stat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx\stdafx.cpp">
+      <Filter>stdafx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\character.cpp">
+      <Filter>character</Filter>
+    </ClCompile>
+    <ClCompile Include="src\equipment.cpp">
+      <Filter>equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stat.cpp">
+      <Filter>stat</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
