@@ -7,11 +7,23 @@
     <Filter Include="equipment">
       <UniqueIdentifier>{6c03fc61-8d3c-4633-80ea-0dffc0f2b18d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="stat">
-      <UniqueIdentifier>{98db5323-9d3a-4c00-8ca0-8238dd07c835}</UniqueIdentifier>
-    </Filter>
     <Filter Include="character">
       <UniqueIdentifier>{af55bc94-d337-41a5-9a2a-524a12620878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="neople_api">
+      <UniqueIdentifier>{17c666c4-e6f2-4e84-8018-44c30f6a7fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{9cfbd7b2-3d71-4185-be7c-0175dcfb96f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="binding">
+      <UniqueIdentifier>{8b6f6d5c-cc42-4fbb-9507-ef3094366cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="option">
+      <UniqueIdentifier>{98db5323-9d3a-4c00-8ca0-8238dd07c835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="weapon">
+      <UniqueIdentifier>{393dad23-45bd-4268-9893-84f22fe52bae}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -24,14 +36,38 @@
     <ClInclude Include="include\enum_equipment.h">
       <Filter>equipment</Filter>
     </ClInclude>
-    <ClInclude Include="include\enum_stat.h">
-      <Filter>stat</Filter>
-    </ClInclude>
     <ClInclude Include="include\equipment.h">
       <Filter>equipment</Filter>
     </ClInclude>
-    <ClInclude Include="include\stat.h">
-      <Filter>stat</Filter>
+    <ClInclude Include="include\equipment_set.h">
+      <Filter>equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="include\api_item.h">
+      <Filter>neople_api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\api_manager.h">
+      <Filter>neople_api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\main.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\dnf_calculator_addon.h">
+      <Filter>binding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\damage_option.h">
+      <Filter>option</Filter>
+    </ClInclude>
+    <ClInclude Include="include\skill_option.h">
+      <Filter>option</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enum_option.h">
+      <Filter>option</Filter>
+    </ClInclude>
+    <ClInclude Include="include\weapon.h">
+      <Filter>weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enum_weapon.h">
+      <Filter>weapon</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -44,8 +80,37 @@
     <ClCompile Include="src\equipment.cpp">
       <Filter>equipment</Filter>
     </ClCompile>
-    <ClCompile Include="src\stat.cpp">
-      <Filter>stat</Filter>
+    <ClCompile Include="src\equipment_set.cpp">
+      <Filter>equipment</Filter>
     </ClCompile>
+    <ClCompile Include="src\api_item.cpp">
+      <Filter>neople_api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\api_manager.cpp">
+      <Filter>neople_api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dnf_calculator_addon.cpp">
+      <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\damage_option.cpp">
+      <Filter>option</Filter>
+    </ClCompile>
+    <ClCompile Include="src\skill_option.cpp">
+      <Filter>option</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weapon.cpp">
+      <Filter>weapon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\binding.gyp">
+      <Filter>binding</Filter>
+    </None>
+    <None Include="..\lib\binding.ts">
+      <Filter>binding</Filter>
+    </None>
   </ItemGroup>
 </Project>

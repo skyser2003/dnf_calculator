@@ -1,0 +1,18 @@
+[
+    {
+        "id": "fettering_top",
+        "name": "구속의 체인플레이트",
+        "type": "top",
+        "set_id": "fettering_brambles",
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 50
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 15
+            }
+        ]
+    }
+]

@@ -3,22 +3,20 @@
 class DamageOption;
 class SkillOption;
 
-class Equipment
+class Weapon
 {
 private:
 	int id_;
 	std::string stringId_;
 	std::string name_;
-	EquipmentPart type_;
-	std::string setId_;
-	bool isMythic_;
+	WeaponType type;
 
 	std::vector<std::unique_ptr<DamageOption>> damageOptions_;
 	std::vector<std::unique_ptr<SkillOption>> skillOptions_;
 
 public:
-	Equipment(int id, const nlohmann::json& json);
-	~Equipment();
+	Weapon(int id, const nlohmann::json& json);
+	~Weapon();
 
 	decltype(stringId_) getStringId() const;
 	decltype(name_) getName() const;

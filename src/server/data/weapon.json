@@ -1,0 +1,17 @@
+[
+    {
+        "id": "angervadil",
+        "name": "알라카바스타",
+        "type": "short_sword",
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 50
+            },
+            {
+                "type":"AdditionalCriAttackDamage",
+                "value": 15
+            }
+        ]
+    }
+]

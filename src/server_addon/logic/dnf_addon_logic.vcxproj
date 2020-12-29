@@ -55,8 +55,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>include;stdafx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\v8\include;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\zlib;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\uv\include;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\openssl\openssl\include;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\openssl\config;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\src;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\include\node;../node_modules/node-addon-api;include;stdafx;external/json/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -78,8 +80,10 @@ popd</Command>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>include;stdafx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\v8\include;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\zlib;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\uv\include;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\openssl\openssl\include;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\deps\openssl\config;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\src;C:\Users\skyser2003\AppData\Local\node-gyp\Cache\15.3.0\include\node;../node_modules/node-addon-api;include;stdafx;external/json/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -96,18 +100,40 @@ popd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\dnf_calculator_addon.h" />
+    <ClInclude Include="include\api_item.h" />
+    <ClInclude Include="include\api_manager.h" />
     <ClInclude Include="include\character.h" />
     <ClInclude Include="include\enum_equipment.h" />
-    <ClInclude Include="include\enum_stat.h" />
+    <ClInclude Include="include\enum_option.h" />
+    <ClInclude Include="include\enum_weapon.h" />
     <ClInclude Include="include\equipment.h" />
-    <ClInclude Include="include\stat.h" />
+    <ClInclude Include="include\equipment_set.h" />
+    <ClInclude Include="include\skill_option.h" />
+    <ClInclude Include="include\main.h" />
+    <ClInclude Include="include\damage_option.h" />
+    <ClInclude Include="include\weapon.h" />
     <ClInclude Include="stdafx\stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\dnf_calculator_addon.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\api_item.cpp" />
+    <ClCompile Include="src\api_manager.cpp" />
     <ClCompile Include="src\character.cpp" />
     <ClCompile Include="src\equipment.cpp" />
-    <ClCompile Include="src\stat.cpp" />
+    <ClCompile Include="src\equipment_set.cpp" />
+    <ClCompile Include="src\skill_option.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\damage_option.cpp" />
+    <ClCompile Include="src\weapon.cpp" />
     <ClCompile Include="stdafx\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\binding.gyp" />
+    <None Include="..\lib\binding.ts" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

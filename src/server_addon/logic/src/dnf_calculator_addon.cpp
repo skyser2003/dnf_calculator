@@ -1,4 +1,3 @@
-#include <map>
 #include "dnf_calculator_addon.h"
 
 #include "main.h"

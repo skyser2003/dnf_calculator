@@ -1,0 +1,38 @@
+[
+    {
+        "id": "fettering_brambles",
+        "name": "구속 어쩌고저쩌고",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "PhyMagIndAttack",
+                        "value": 50
+                    },
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 15
+                    }
+                ],
+                "skill_options": [
+                    {
+                        "type": "LevelIncrease",
+                        "level_range": "5-10",
+                        "value": 1
+                    },
+                    {
+                        "type": "CooldownReduce",
+                        "level_range": "1-30",
+                        "value": 10
+                    },
+                    {
+                        "type": "CooldownRecoveryUp",
+                        "level_range": "30-45",
+                        "value": 15
+                    }
+                ]
+            }
+        ]
+    }
+]
