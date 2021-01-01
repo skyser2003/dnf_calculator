@@ -1,1 +1,1 @@
-export * from "./lib/binding";
+export * from "./lib";
