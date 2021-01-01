@@ -51,7 +51,7 @@ const auto weaponTypeMap = std::map<std::string, WeaponType>{
 	{"core_blade", WeaponType::CoreBlade}
 };
 
-Weapon::Weapon(int id, const nlohmann::json& json) : id_(id)
+Weapon::Weapon(int id, const nlohmann::json& json) : Equippable(json), id_(id)
 {
 	this->stringId_ = json["id"].get<std::string>();
 	this->name_ = json["name"].get<std::string>();

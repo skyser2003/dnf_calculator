@@ -5,7 +5,7 @@
 #include "equipment.h"
 #include "equipment_set.h"
 
-Main::Main()
+Main::Main() : weaponJson_(new nlohmann::json()), equipmentJson_(new nlohmann::json()), equipmentSetJson_(new nlohmann::json())
 {
 	size_t apiKeySize;
 	char rawApiKey[255];
@@ -17,18 +17,12 @@ Main::Main()
 	auto equipmentJsonFile = std::ifstream("data/equipment.json");
 	auto equipmentSetJsonFile = std::ifstream("data/equipment_set.json");
 
-	auto weaponJson = nlohmann::json();
-	auto equipmentJson = nlohmann::json();
-	auto equipmentSetJson = nlohmann::json();
-
-	weaponJsonFile >> weaponJson;
-	equipmentJsonFile >> equipmentJson;
-	equipmentSetJsonFile >> equipmentSetJson;
-
-	cout << "test" << endl;
+	weaponJsonFile >> *weaponJson_;
+	equipmentJsonFile >> *equipmentJson_;
+	equipmentSetJsonFile >> *equipmentSetJson_;
 
 	// Data
-	for (const auto& it : weaponJson)
+	for (const auto& it : *weaponJson_)
 	{
 		int uid = weapons_.size();
 		auto weapon = std::make_unique<Weapon>(uid, it);
@@ -41,7 +35,7 @@ Main::Main()
 
 	cout << "test2" << endl;
 
-	for (const auto& it : equipmentJson)
+	for (const auto& it : *equipmentJson_)
 	{
 		int uid = equipments_.size();
 		auto equipment = std::make_unique<Equipment>(uid, it);
@@ -50,7 +44,7 @@ Main::Main()
 		equipments_.push_back(std::move(equipment));
 	}
 
-	for (const auto& it : equipmentSetJson)
+	for (const auto& it : *equipmentSetJson_)
 	{
 		auto equipmentSet = std::make_unique<EquipmentSet>(it);
 
@@ -67,4 +61,19 @@ Main::Main()
 Main::~Main()
 {
 
+}
+
+const nlohmann::json& Main::getWeaponJson() const
+{
+	return *weaponJson_;
+}
+
+const nlohmann::json& Main::getEquipmentJson() const
+{
+	return *equipmentJson_;
+}
+
+const nlohmann::json& Main::getEquipmentSetJson() const
+{
+	return *equipmentSetJson_;
 }

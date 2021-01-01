@@ -18,7 +18,7 @@ const auto equipmentTypeMap = std::map<std::string, EquipmentType>{
 	{"earrings", EquipmentType::Earrings}
 };
 
-Equipment::Equipment(int id, const nlohmann::json& json) : id_(id)
+Equipment::Equipment(int id, const nlohmann::json& json) : Equippable(json), id_(id)
 {
 	this->stringId_ = json["id"].get<std::string>();
 	this->name_ = "";

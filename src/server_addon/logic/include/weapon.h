@@ -1,9 +1,11 @@
 #pragma once
 
+#include "equippable.h"
+
 class DamageOption;
 class SkillOption;
 
-class Weapon
+class Weapon : public Equippable
 {
 private:
 	int id_;

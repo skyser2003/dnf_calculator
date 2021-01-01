@@ -1,13 +1,16 @@
 #include <map>
+#include <memory>
+
 #include "dnf_calculator_addon.h"
 
 #include "main.h"
+#include "nlohmann/json.hpp"
 
 using namespace Napi;
 
-DnfCalculatorAddon::DnfCalculatorAddon(const Napi::CallbackInfo& info) : ObjectWrap(info) {
-    main.reset(new Main());
+#define REGISTER(func_name) DnfCalculatorAddon::InstanceMethod(#func_name, &DnfCalculatorAddon::func_name)
 
+DnfCalculatorAddon::DnfCalculatorAddon(const Napi::CallbackInfo& info) : ObjectWrap(info), main_(new Main()) {
     Napi::Env env = info.Env();
 
     if (info.Length() < 1) {
@@ -25,7 +28,7 @@ DnfCalculatorAddon::DnfCalculatorAddon(const Napi::CallbackInfo& info) : ObjectW
     this->_greeterName = info[0].As<Napi::String>().Utf8Value();
 }
 
-Napi::Value DnfCalculatorAddon::Greet(const Napi::CallbackInfo& info) {
+Napi::Value DnfCalculatorAddon::greet(const Napi::CallbackInfo& info) {
     Napi::Env env = info.Env();
 
     if (info.Length() < 1) {
@@ -48,10 +51,43 @@ Napi::Value DnfCalculatorAddon::Greet(const Napi::CallbackInfo& info) {
     return Napi::String::New(env, this->_greeterName);
 }
 
+Napi::Value DnfCalculatorAddon::getWeaponJson(const Napi::CallbackInfo& info)
+{
+    auto env = info.Env();
+
+    return parse(env, this->main_->getWeaponJson().dump());
+}
+
+Napi::Value DnfCalculatorAddon::getEquipmentJson(const Napi::CallbackInfo& info)
+{
+    auto env = info.Env();
+
+    return parse(env, this->main_->getEquipmentJson().dump());
+}
+
+Napi::Value DnfCalculatorAddon::getEquipmentSetJson(const Napi::CallbackInfo& info)
+{
+    auto env = info.Env();
+
+    return parse(env, this->main_->getEquipmentSetJson().dump());
+}
+
 Napi::Function DnfCalculatorAddon::GetClass(Napi::Env env) {
     return DefineClass(env, "DnfCalculatorAddon", {
-        DnfCalculatorAddon::InstanceMethod("greet", &DnfCalculatorAddon::Greet),
+        REGISTER(greet),
+        REGISTER(getWeaponJson),
+        REGISTER(getEquipmentJson),
+        REGISTER(getEquipmentSetJson),
         });
+}
+
+Napi::Object DnfCalculatorAddon::parse(const Napi::Env& env, const std::string& str) const
+{
+    auto json = env.Global().Get("JSON").As<Napi::Object>();
+    auto parse = json.Get("parse").As<Napi::Function>();
+    auto jsonString = Napi::String::New(env, str);
+
+    return parse.Call(json, { jsonString }).As<Napi::Object>();
 }
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {

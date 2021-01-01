@@ -1,11 +1,13 @@
 #pragma once
 
+#include "equippable.h"
+
 class DamageOption;
 class SkillOption;
 
 class EquipmentSetOption;
 
-class EquipmentSet
+class EquipmentSet : public Equippable
 {
 public:
 	EquipmentSet(const nlohmann::json& json);

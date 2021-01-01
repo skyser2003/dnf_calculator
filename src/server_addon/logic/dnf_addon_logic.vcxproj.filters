@@ -4,9 +4,6 @@
     <Filter Include="stdafx">
       <UniqueIdentifier>{6273cbb6-d2c2-4e29-af40-997de637aac6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="equipment">
-      <UniqueIdentifier>{6c03fc61-8d3c-4633-80ea-0dffc0f2b18d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="character">
       <UniqueIdentifier>{af55bc94-d337-41a5-9a2a-524a12620878}</UniqueIdentifier>
     </Filter>
@@ -22,7 +19,13 @@
     <Filter Include="option">
       <UniqueIdentifier>{98db5323-9d3a-4c00-8ca0-8238dd07c835}</UniqueIdentifier>
     </Filter>
-    <Filter Include="weapon">
+    <Filter Include="equippable">
+      <UniqueIdentifier>{1a5daf78-cab7-48a0-8dd4-6d6800aef90f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="equippable\equipment">
+      <UniqueIdentifier>{6c03fc61-8d3c-4633-80ea-0dffc0f2b18d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="equippable\weapon">
       <UniqueIdentifier>{393dad23-45bd-4268-9893-84f22fe52bae}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -34,13 +37,13 @@
       <Filter>character</Filter>
     </ClInclude>
     <ClInclude Include="include\enum_equipment.h">
-      <Filter>equipment</Filter>
+      <Filter>equippable\equipment</Filter>
     </ClInclude>
     <ClInclude Include="include\equipment.h">
-      <Filter>equipment</Filter>
+      <Filter>equippable\equipment</Filter>
     </ClInclude>
     <ClInclude Include="include\equipment_set.h">
-      <Filter>equipment</Filter>
+      <Filter>equippable\equipment</Filter>
     </ClInclude>
     <ClInclude Include="include\api_item.h">
       <Filter>neople_api</Filter>
@@ -64,10 +67,13 @@
       <Filter>option</Filter>
     </ClInclude>
     <ClInclude Include="include\weapon.h">
-      <Filter>weapon</Filter>
+      <Filter>equippable\weapon</Filter>
     </ClInclude>
     <ClInclude Include="include\enum_weapon.h">
-      <Filter>weapon</Filter>
+      <Filter>equippable\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\equippable.h">
+      <Filter>equippable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -78,10 +84,10 @@
       <Filter>character</Filter>
     </ClCompile>
     <ClCompile Include="src\equipment.cpp">
-      <Filter>equipment</Filter>
+      <Filter>equippable\equipment</Filter>
     </ClCompile>
     <ClCompile Include="src\equipment_set.cpp">
-      <Filter>equipment</Filter>
+      <Filter>equippable\equipment</Filter>
     </ClCompile>
     <ClCompile Include="src\api_item.cpp">
       <Filter>neople_api</Filter>
@@ -102,7 +108,10 @@
       <Filter>option</Filter>
     </ClCompile>
     <ClCompile Include="src\weapon.cpp">
-      <Filter>weapon</Filter>
+      <Filter>equippable\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\equippable.cpp">
+      <Filter>equippable</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

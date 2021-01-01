@@ -3,7 +3,7 @@
     {
       'target_name': 'dnf_calculator_addon-native',
       'sources': [ 'src/dnf_calculator_addon.cpp' ],
-      'include_dirs': ["<!@(node -p \"require('node-addon-api').include\")", "include", "logic/include", "logic/stdafx"],
+      'include_dirs': ["<!@(node -p \"require('node-addon-api').include\")", "include", "logic/include", "logic/stdafx", "logic/external/json/include"],
       'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
       'cflags!': [ '-fno-exceptions' ],
       'cflags_cc!': [ '-fno-exceptions' ],
