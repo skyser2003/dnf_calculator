@@ -7,6 +7,7 @@
     "build": "tsc",
     "configure": "node-gyp configure",
     "rebuild": "npm run configure && node-gyp rebuild",
+    "rebuild:debug": "node-gyp configure && node-gyp --debug rebuild",
     "pretest": "tsc",
     "test": "node --napi-modules ./test/test_binding.js"
   },

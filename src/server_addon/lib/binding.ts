@@ -1,4 +1,4 @@
-const addon = require('../build/Release/dnf_calculator_addon-native');
+const addon = require('../build/Debug/dnf_calculator_addon-native');
 
 interface IDnfCalculatorAddonNative
 {

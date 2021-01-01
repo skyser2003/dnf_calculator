@@ -7,7 +7,7 @@
       'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
       'cflags!': [ '-fno-exceptions' ],
       'cflags_cc!': [ '-fno-exceptions' ],
-      'libraries': ['<(module_root_dir)/logic/x64/Release/dnf_addon_logic'],
+      'libraries': ['<(module_root_dir)/logic/x64/Debug/dnf_addon_logic'],
       'xcode_settings': {
         'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
         'CLANG_CXX_LIBRARY': 'libc++',
@@ -15,7 +15,6 @@
       },
       'msvs_settings': {
         'VCCLCompilerTool': { 'ExceptionHandling': 1 },
-      }
-    }
+      }    }
   ]
 }

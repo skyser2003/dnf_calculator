@@ -67,7 +67,7 @@
     <PostBuildEvent>
       <Command>pushd $(ProjectDir)..
 
-npm run rebuild
+npm run rebuild:debug
 
 popd</Command>
     </PostBuildEvent>
