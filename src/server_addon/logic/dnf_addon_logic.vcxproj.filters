@@ -112,5 +112,11 @@
     <None Include="..\lib\binding.ts">
       <Filter>binding</Filter>
     </None>
+    <None Include="..\package.json">
+      <Filter>binding</Filter>
+    </None>
+    <None Include="..\tsconfig.json">
+      <Filter>binding</Filter>
+    </None>
   </ItemGroup>
 </Project>

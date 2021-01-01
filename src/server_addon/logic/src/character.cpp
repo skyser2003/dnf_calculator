@@ -3,7 +3,7 @@
 
 #include "equipment.h"
 
-void Character::setEquipment(EquipmentPart equipPart, Equipment& equipment)
+void Character::setEquipment(EquipmentType equipPart, Equipment& equipment)
 {
 	equipments.insert({ equipPart, equipment });
 }

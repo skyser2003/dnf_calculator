@@ -15,7 +15,8 @@ enum class DamageOptionType
 	WaterElementUp,
 	LightElementUp,
 	DarkElementUp,
-	AllElementsUp
+	AllElementsUp,
+	CriChance
 };
 
 enum class SkillOptionType

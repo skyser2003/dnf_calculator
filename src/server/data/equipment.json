@@ -1,17 +1,315 @@
 [
     {
-        "id": "fettering_top",
-        "name": "구속의 체인플레이트",
+        "id": "ancient_celebrant_top",
         "type": "top",
-        "set_id": "fettering_brambles",
+        "set_id": "ancient_celebrant",
+        "is_mythic": false,
         "damage_options": [
             {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "AllAttack",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "ancient_celebrant_mythic_top",
+        "type": "top",
+        "set_id": "ancient_celebrant",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "AllAttack",
+                "value": 12
+            },
+            {
+                "type": "BonusDamage",
+                "value": 10
+            },
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 11
+            }
+        ]
+    },
+    {
+        "id": "ancient_celebrant_bottom",
+        "type": "bottom",
+        "set_id": "ancient_celebrant",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
                 "type": "AdditionalAttackDamage",
-                "value": 50
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "ancient_celebrant_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "ancient_celebrant",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "ancient_celebrant_belt",
+        "type": "belt",
+        "set_id": "ancient_celebrant",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
             },
             {
                 "type": "AdditionalCriAttackDamage",
-                "value": 15
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "ancient_celebrant_sandle",
+        "type": "shoes",
+        "set_id": "ancient_celebrant",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "BonusDamage",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "mage_unknown_top",
+        "type": "top",
+        "set_id": "mage_unknown",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllAttack",
+                "value": 12
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "PercentStat",
+                "value": 5
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "1-45",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": "mage_unknown_mythic_top",
+        "type": "top",
+        "set_id": "mage_unknown",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AllAttack",
+                "value": 12
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "PercentStat",
+                "value": 5
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 11
+            },
+            {
+                "type": "PercentStat",
+                "value": 12
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "1-45",
+                "value": 1
+            },
+            {
+                "type": "LevelIncrease",
+                "level_range": "1-45",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": "mage_unknown_bottom",
+        "type": "bottom",
+        "set_id": "mage_unknown",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 12
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "PercentStat",
+                "value": 5
+            },
+            {
+                "type": "AllElementsUp",
+                "value": 18
+            }
+        ]
+    },
+    {
+        "id": "mage_unknown_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "mage_unknown",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 13
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "PercentStat",
+                "value": 5
+            },
+            {
+                "type": "CriChance",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "mage_unknown_belt",
+        "type": "belt",
+        "set_id": "mage_unknown",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "BonusDamage",
+                "value": 14
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "PercentStat",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "mage_unknown_shoes",
+        "type": "shoes",
+        "set_id": "mage_unknown",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 18
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "PercentStat",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "celestial_dancer_top",
+        "type": "top",
+        "set_id": "celestial_dancer",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 17
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 14
+            },
+            {
+                "type": "PercentStat",
+                "value": 5
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownReduce",
+                "level_range": "1-45",
+                "value": 10
             }
         ]
     }

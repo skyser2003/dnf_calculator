@@ -7,9 +7,9 @@ class Equipment;
 class Character
 {
 public:
-	void setEquipment(EquipmentPart equipPart, Equipment& equipment);
+	void setEquipment(EquipmentType equipPart, Equipment& equipment);
 	const std::map<FinalDamageOptionType, float> calcStats() const;
 
 private:
-	std::map<EquipmentPart, Equipment&> equipments;
+	std::map<EquipmentType, Equipment&> equipments;
 };

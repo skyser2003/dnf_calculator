@@ -134,6 +134,8 @@ popd</Command>
   <ItemGroup>
     <None Include="..\binding.gyp" />
     <None Include="..\lib\binding.ts" />
+    <None Include="..\package.json" />
+    <None Include="..\tsconfig.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

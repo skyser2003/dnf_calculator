@@ -15,11 +15,13 @@ const auto damageTypeMap = std::map<std::string, DamageOptionType>{
 	{"WaterElementUp", DamageOptionType::WaterElementUp},
 	{"LightElementUp", DamageOptionType::LightElementUp},
 	{"DarkElementUp", DamageOptionType::DarkElementUp},
-	{"AllElementsUp", DamageOptionType::AllElementsUp}
+	{"AllElementsUp", DamageOptionType::AllElementsUp},
+	{"CriChance", DamageOptionType::CriChance}
 };
 
 DamageOption::DamageOption(const nlohmann::json& json)
 {
+	cout << json.dump() << endl;
 	this->type = damageTypeMap.at(json["type"].get<std::string>());
 	this->value = json["value"].get<decltype(this->value)>();
 }

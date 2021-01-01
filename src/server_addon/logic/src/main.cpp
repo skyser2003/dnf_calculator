@@ -17,25 +17,31 @@ Main::Main()
 	auto equipmentJsonFile = std::ifstream("data/equipment.json");
 	auto equipmentSetJsonFile = std::ifstream("data/equipment_set.json");
 
-	auto weaponJsonStr = std::string(std::istreambuf_iterator<char>(weaponJsonFile), std::istreambuf_iterator<char>());
-	auto equipmentJsonStr = std::string(std::istreambuf_iterator<char>(equipmentJsonFile), std::istreambuf_iterator<char>());
-	auto equipmentSetJsonStr = std::string(std::istreambuf_iterator<char>(equipmentSetJsonFile), std::istreambuf_iterator<char>());
+	auto weaponJson = nlohmann::json();
+	auto equipmentJson = nlohmann::json();
+	auto equipmentSetJson = nlohmann::json();
 
-	auto weaponJson = nlohmann::json::parse(weaponJsonStr);
-	auto equipmentJson = nlohmann::json::parse(equipmentJsonStr);
-	auto equipmentSetJson = nlohmann::json::parse(equipmentSetJsonStr);
+	weaponJsonFile >> weaponJson;
+	equipmentJsonFile >> equipmentJson;
+	equipmentSetJsonFile >> equipmentSetJson;
+
+	cout << "test" << endl;
 
 	// Data
-	for (auto& it : weaponJson)
+	for (const auto& it : weaponJson)
 	{
 		int uid = weapons_.size();
 		auto weapon = std::make_unique<Weapon>(uid, it);
-		weaponIdConverter_.emplace(weapon->getStringId(), uid);
+		cout << "Weapon uid: " << uid << endl;
+		weaponIdConverter_.insert({ weapon->getStringId(), uid });
+		// weaponIdConverter_.emplace(weapon->getStringId(), uid);
 
 		weapons_.push_back(std::move(weapon));
 	}
 
-	for (auto& it : equipmentJson)
+	cout << "test2" << endl;
+
+	for (const auto& it : equipmentJson)
 	{
 		int uid = equipments_.size();
 		auto equipment = std::make_unique<Equipment>(uid, it);
@@ -44,7 +50,12 @@ Main::Main()
 		equipments_.push_back(std::move(equipment));
 	}
 
-	equipmentSet_.reset(new EquipmentSet(equipmentSetJson));
+	for (const auto& it : equipmentSetJson)
+	{
+		auto equipmentSet = std::make_unique<EquipmentSet>(it);
+
+		equipmentSets_.push_back(std::move(equipmentSet));
+	}
 
 	equipmentJsonFile.close();
 	equipmentSetJsonFile.close();

@@ -1,6 +1,6 @@
 #pragma once
 
-enum class EquipmentPart
+enum class EquipmentType
 {
 	HeadShoulder,
 	Top,
@@ -17,14 +17,14 @@ enum class EquipmentPart
 
 enum class MythicEquipmentPart
 {
-	Top = static_cast<int>(EquipmentPart::Top),
-	Bracelet = static_cast<int>(EquipmentPart::Bracelet),
-	Earrings = static_cast<int>(EquipmentPart::Earrings)
+	Top = static_cast<int>(EquipmentType::Top),
+	Bracelet = static_cast<int>(EquipmentType::Bracelet),
+	Earrings = static_cast<int>(EquipmentType::Earrings)
 };
 
 enum class SirocoEquipmentPart
 {
-	Bottom = static_cast<int>(EquipmentPart::Bottom),
-	SubEquipment = static_cast<int>(EquipmentPart::SubEquipment),
-	Ring = static_cast<int>(EquipmentPart::Ring),
+	Bottom = static_cast<int>(EquipmentType::Bottom),
+	SubEquipment = static_cast<int>(EquipmentType::SubEquipment),
+	Ring = static_cast<int>(EquipmentType::Ring),
 };

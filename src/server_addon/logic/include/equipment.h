@@ -9,7 +9,7 @@ private:
 	int id_;
 	std::string stringId_;
 	std::string name_;
-	EquipmentPart type_;
+	EquipmentType type_;
 	std::string setId_;
 	bool isMythic_;
 

@@ -1,35 +1,155 @@
 [
     {
-        "id": "fettering_brambles",
-        "name": "구속 어쩌고저쩌고",
+        "id": "ancient_celebrant",
         "set_options": [
             {
                 "piece": 2,
                 "damage_options": [
                     {
+                        "type": "PercentStat",
+                        "value": 8
+                    },
+                    {
+                        "type": "AdditionalAttackDamage",
+                        "value": 21
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
                         "type": "PhyMagIndAttack",
-                        "value": 50
+                        "value": 8
+                    },
+                    {
+                        "type": "BonusDamage",
+                        "value": 21
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 21
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 25
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mage_unknown",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 14
+                    },
+                    {
+                        "type": "AllAttack",
+                        "value": 14
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AdditionalAttackDamage",
+                        "value": 22
                     },
                     {
                         "type": "AdditionalCriAttackDamage",
-                        "value": 15
+                        "value": 10
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "CriChance",
+                        "value": 5
+                    },
+                    {
+                        "type": "PercentStat",
+                        "value": 13
                     }
                 ],
                 "skill_options": [
                     {
                         "type": "LevelIncrease",
-                        "level_range": "5-10",
-                        "value": 1
+                        "level_range": "1-85",
+                        "value": 2
                     },
                     {
-                        "type": "CooldownReduce",
-                        "level_range": "1-30",
+                        "type": "LevelIncrease",
+                        "level_range": "100-100",
+                        "value": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "celestial_dancer",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 14
+                    },
+                    {
+                        "type": "AllAttack",
+                        "value": 14
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AdditionalAttackDamage",
+                        "value": 22
+                    },
+                    {
+                        "type": "AdditionalCriAttackDamage",
                         "value": 10
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "CriChance",
+                        "value": 5
                     },
                     {
-                        "type": "CooldownRecoveryUp",
-                        "level_range": "30-45",
-                        "value": 15
+                        "type": "PercentStat",
+                        "value": 13
+                    }
+                ],
+                "skill_options": [
+                    {
+                        "type": "LevelIncrease",
+                        "level_range": "1-85",
+                        "value": 2
+                    },
+                    {
+                        "type": "LevelIncrease",
+                        "level_range": "100-100",
+                        "value": 2
                     }
                 ]
             }

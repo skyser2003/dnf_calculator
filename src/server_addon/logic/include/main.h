@@ -16,5 +16,5 @@ private:
 
 	std::vector<std::unique_ptr<Weapon>> weapons_;
 	std::vector<std::unique_ptr<Equipment>> equipments_;
-	std::unique_ptr<EquipmentSet> equipmentSet_;
+	std::vector<std::unique_ptr<EquipmentSet>> equipmentSets_;
 };

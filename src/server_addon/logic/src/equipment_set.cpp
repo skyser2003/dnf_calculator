@@ -6,37 +6,41 @@
 
 EquipmentSet::EquipmentSet(const nlohmann::json& json)
 {
-	for (auto& elem : json)
+	this->id_ = json["id"].get<std::string>();
+	this->name_ = "";
+
+	auto& setOptions = json["set_options"];
+
+	for (auto& it : setOptions)
 	{
-		this->id_ = elem["id"].get<std::string>();
-		this->name_ = elem["name"].get<std::string>();
+		auto setOption = std::make_unique<EquipmentSetOption>(it);
+		auto piece = setOption->getPiece();
 
-		auto& setOptions = elem["set_options"];
-
-		for (auto& it : setOptions)
-		{
-			auto setOption = std::make_unique<EquipmentSetOption>(it);
-			auto piece = setOption->getPiece();
-
-			this->setOptions_.emplace(piece, std::move(setOption));
-		}
+		this->setOptions_.emplace(piece, std::move(setOption));
 	}
 }
 
 EquipmentSetOption::EquipmentSetOption(const nlohmann::json& json)
 {
 	this->piece_ = json["piece"].get<int>();
-	auto& jsonDamageOptions = json["damage_options"];
-	auto& jsonSkillOptions = json["skill_options"];
 
-	for (const auto& it : jsonDamageOptions)
+	const auto& damageOptionsIt = json.find("damage_options");
+	const auto& skillOptionsIt = json.find("skill_options");
+
+	if (damageOptionsIt != json.end())
 	{
-		this->damageOptions_.push_back(std::make_unique<DamageOption>(it));
+		for (const auto& it : damageOptionsIt.value())
+		{
+			this->damageOptions_.push_back(std::make_unique<DamageOption>(it));
+		}
 	}
 
-	for (const auto& it : jsonSkillOptions)
+	if (skillOptionsIt != json.end())
 	{
-		this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
+		for (const auto& it : skillOptionsIt.value())
+		{
+			this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
+		}
 	}
 }
 

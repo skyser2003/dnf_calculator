@@ -4,41 +4,45 @@
 #include "damage_option.h"
 #include "skill_option.h"
 
-const auto equipmentTypeMap = std::map<std::string, EquipmentPart>{
-	{"head_shoulder", EquipmentPart::HeadShoulder},
-	{"top", EquipmentPart::Top},
-	{"bottom", EquipmentPart::Bottom},
-	{"belt", EquipmentPart::Belt},
-	{"shoes", EquipmentPart::Shoes},
-	{"bracelet", EquipmentPart::Bracelet},
-	{"necklace", EquipmentPart::Necklace},
-	{"ring", EquipmentPart::Ring},
-	{"sub_equipment", EquipmentPart::SubEquipment},
-	{"magic_stone", EquipmentPart::MagicStone},
-	{"earrings", EquipmentPart::Earrings}
+const auto equipmentTypeMap = std::map<std::string, EquipmentType>{
+	{"head_shoulder", EquipmentType::HeadShoulder},
+	{"top", EquipmentType::Top},
+	{"bottom", EquipmentType::Bottom},
+	{"belt", EquipmentType::Belt},
+	{"shoes", EquipmentType::Shoes},
+	{"bracelet", EquipmentType::Bracelet},
+	{"necklace", EquipmentType::Necklace},
+	{"ring", EquipmentType::Ring},
+	{"sub_equipment", EquipmentType::SubEquipment},
+	{"magic_stone", EquipmentType::MagicStone},
+	{"earrings", EquipmentType::Earrings}
 };
 
 Equipment::Equipment(int id, const nlohmann::json& json) : id_(id)
 {
 	this->stringId_ = json["id"].get<std::string>();
-	this->name_ = json["name"].get<std::string>();
+	this->name_ = "";
 	this->type_ = equipmentTypeMap.at(json["type"].get<std::string>());
 	this->setId_ = json["set_id"].get<std::string>();
+	this->isMythic_ = json["is_mythic"].get<bool>();
 
-	const auto& jsonIsMythic = json["is_mythic"];
-	this->isMythic_ = jsonIsMythic.is_boolean() && jsonIsMythic.get<bool>();
+	const auto& damageOptionsIt = json.find("damage_options");
+	const auto& skillOptionsIt = json.find("skill_options");
 
-	const auto& jsonDamageOptions = json["damage_options"];
-	const auto& jsonSkillOptions = json["skill_options"];
-
-	for (const auto& it : jsonDamageOptions)
+	if (damageOptionsIt != json.end())
 	{
-		this->damageOptions_.push_back(std::make_unique<DamageOption>(it));
+		for (const auto& it : damageOptionsIt.value())
+		{
+			this->damageOptions_.push_back(std::make_unique<DamageOption>(it));
+		}
 	}
 
-	for (const auto& it : jsonSkillOptions)
+	if (skillOptionsIt != json.end())
 	{
-		this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
+		for (const auto& it : skillOptionsIt.value())
+		{
+			this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
+		}
 	}
 }
 

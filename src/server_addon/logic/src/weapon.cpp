@@ -57,17 +57,23 @@ Weapon::Weapon(int id, const nlohmann::json& json) : id_(id)
 	this->name_ = json["name"].get<std::string>();
 	this->type = weaponTypeMap.at(json["type"].get<std::string>());
 
-	const auto& jsonDamageOptions = json["damage_options"];
-	const auto& jsonSkillOptions = json["skill_options"];
+	const auto& damageOptionsIt = json.find("damage_options");
+	const auto& skillOptionsIt = json.find("skill_options");
 
-	for (const auto& it : jsonDamageOptions)
+	if (damageOptionsIt != json.end())
 	{
-		this->damageOptions_.push_back(std::make_unique<DamageOption>(it));
+		for (const auto& it : damageOptionsIt.value())
+		{
+			this->damageOptions_.push_back(std::make_unique<DamageOption>(it));
+		}
 	}
 
-	for (const auto& it : jsonSkillOptions)
+	if (skillOptionsIt != json.end())
 	{
-		this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
+		for (const auto& it : skillOptionsIt.value())
+		{
+			this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
+		}
 	}
 }
 

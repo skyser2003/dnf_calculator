@@ -13,3 +13,6 @@
 #include "enum_weapon.h"
 #include "enum_equipment.h"
 #include "enum_option.h"
+
+using std::cout;
+using std::endl;
