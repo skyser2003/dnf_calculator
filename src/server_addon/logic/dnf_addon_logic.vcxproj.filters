@@ -118,13 +118,13 @@
     <None Include="..\binding.gyp">
       <Filter>binding</Filter>
     </None>
-    <None Include="..\lib\binding.ts">
-      <Filter>binding</Filter>
-    </None>
     <None Include="..\package.json">
       <Filter>binding</Filter>
     </None>
     <None Include="..\tsconfig.json">
+      <Filter>binding</Filter>
+    </None>
+    <None Include="..\lib\index.d.ts">
       <Filter>binding</Filter>
     </None>
   </ItemGroup>

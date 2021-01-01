@@ -132,7 +132,7 @@ popd</Command>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\binding.gyp" />
-    <None Include="..\lib\binding.ts" />
+    <None Include="..\lib\index.d.ts" />
     <None Include="..\package.json" />
     <None Include="..\tsconfig.json" />
   </ItemGroup>
