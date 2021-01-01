@@ -100,10 +100,10 @@ popd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\dnf_calculator_addon.h" />
     <ClInclude Include="include\api_item.h" />
     <ClInclude Include="include\api_manager.h" />
     <ClInclude Include="include\character.h" />
+    <ClInclude Include="include\dnf_calculator_addon.h" />
     <ClInclude Include="include\enum_equipment.h" />
     <ClInclude Include="include\enum_option.h" />
     <ClInclude Include="include\enum_weapon.h" />
@@ -117,13 +117,10 @@ popd</Command>
     <ClInclude Include="stdafx\stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\dnf_calculator_addon.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="src\api_item.cpp" />
     <ClCompile Include="src\api_manager.cpp" />
     <ClCompile Include="src\character.cpp" />
+    <ClCompile Include="src\dnf_calculator_addon.cpp" />
     <ClCompile Include="src\equipment.cpp" />
     <ClCompile Include="src\equipment_set.cpp" />
     <ClCompile Include="src\equippable.cpp" />

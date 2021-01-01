@@ -54,9 +54,6 @@
     <ClInclude Include="include\main.h">
       <Filter>main</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\dnf_calculator_addon.h">
-      <Filter>binding</Filter>
-    </ClInclude>
     <ClInclude Include="include\damage_option.h">
       <Filter>option</Filter>
     </ClInclude>
@@ -74,6 +71,9 @@
     </ClInclude>
     <ClInclude Include="include\equippable.h">
       <Filter>equippable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dnf_calculator_addon.h">
+      <Filter>binding</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -98,9 +98,6 @@
     <ClCompile Include="src\main.cpp">
       <Filter>main</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\dnf_calculator_addon.cpp">
-      <Filter>binding</Filter>
-    </ClCompile>
     <ClCompile Include="src\damage_option.cpp">
       <Filter>option</Filter>
     </ClCompile>
@@ -112,6 +109,9 @@
     </ClCompile>
     <ClCompile Include="src\equippable.cpp">
       <Filter>equippable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dnf_calculator_addon.cpp">
+      <Filter>binding</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
