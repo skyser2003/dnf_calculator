@@ -15,6 +15,7 @@ private:
 	std::unique_ptr<nlohmann::json> weaponJson_;
 	std::unique_ptr<nlohmann::json> equipmentJson_;
 	std::unique_ptr<nlohmann::json> equipmentSetJson_;
+	std::unique_ptr<nlohmann::json> dataJson_;
 
 	std::vector<std::unique_ptr<Weapon>> weapons_;
 	std::vector<std::unique_ptr<Equipment>> equipments_;

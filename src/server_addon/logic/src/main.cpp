@@ -16,10 +16,12 @@ Main::Main() : weaponJson_(new nlohmann::json()), equipmentJson_(new nlohmann::j
 	auto weaponJsonFile = std::ifstream("data/weapon.json");
 	auto equipmentJsonFile = std::ifstream("data/equipment.json");
 	auto equipmentSetJsonFile = std::ifstream("data/equipment_set.json");
+	auto dataJsonFile = std::ifstream("data/dat.json");
 
 	weaponJsonFile >> *weaponJson_;
 	equipmentJsonFile >> *equipmentJson_;
 	equipmentSetJsonFile >> *equipmentSetJson_;
+	dataJsonFile >> *dataJson_;
 
 	// Data
 	for (const auto& it : *weaponJson_)
@@ -54,6 +56,7 @@ Main::Main() : weaponJson_(new nlohmann::json()), equipmentJson_(new nlohmann::j
 	equipmentJsonFile.close();
 	equipmentSetJsonFile.close();
 	weaponJsonFile.close();
+	dataJsonFile.close();
 
 	std::cout << "All data parsing done" << std::endl;
 }
