@@ -75,6 +75,9 @@
     <ClInclude Include="include\dnf_calculator_addon.h">
       <Filter>binding</Filter>
     </ClInclude>
+    <ClInclude Include="include\enum_character.h">
+      <Filter>character</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx\stdafx.cpp">

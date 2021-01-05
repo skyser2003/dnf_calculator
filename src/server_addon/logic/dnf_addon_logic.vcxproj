@@ -104,6 +104,7 @@ popd</Command>
     <ClInclude Include="include\api_manager.h" />
     <ClInclude Include="include\character.h" />
     <ClInclude Include="include\dnf_calculator_addon.h" />
+    <ClInclude Include="include\enum_character.h" />
     <ClInclude Include="include\enum_equipment.h" />
     <ClInclude Include="include\enum_option.h" />
     <ClInclude Include="include\enum_weapon.h" />
