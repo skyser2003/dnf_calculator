@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "..\\server_addon"
+		},
+		{
+			"path": "..\\client"
 		}
 	],
 	"settings": {},
