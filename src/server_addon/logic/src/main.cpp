@@ -5,8 +5,13 @@
 #include "equipment.h"
 #include "equipment_set.h"
 
-Main::Main() : weaponJson_(new nlohmann::json()), equipmentJson_(new nlohmann::json()), equipmentSetJson_(new nlohmann::json())
+Main::Main() :
+	weaponJson_(new nlohmann::json()),
+	equipmentJson_(new nlohmann::json()),
+	equipmentSetJson_(new nlohmann::json()),
+	dataJson_(new nlohmann::json())
 {
+
 	size_t apiKeySize;
 	char rawApiKey[255];
 	getenv_s(&apiKeySize, rawApiKey, sizeof(rawApiKey), "API_KEY");
