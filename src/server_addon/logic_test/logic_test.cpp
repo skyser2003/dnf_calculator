@@ -15,7 +15,7 @@ namespace logictest
 		TEST_METHOD(TestMethod1)
 		{
 			Main main("../../../../server/data");
-			cout << main.getEquipmentJson().dump() << endl;
+			Logger::WriteMessage(main.getEquipmentJson().dump().c_str());
 		}
 	};
 }
