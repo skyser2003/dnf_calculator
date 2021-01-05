@@ -41,8 +41,6 @@ Main::Main(const std::string& dataPath)	:
 		weapons_.push_back(std::move(weapon));
 	}
 
-	cout << "test2" << endl;
-
 	for (const auto& it : *equipmentJson_)
 	{
 		int uid = equipments_.size();
