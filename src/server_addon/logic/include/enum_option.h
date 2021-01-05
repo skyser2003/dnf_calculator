@@ -11,6 +11,7 @@ enum class DamageOptionType
 	PercentStat,
 	PhyMagIndAttack,
 	ExtrinsicAttackDamage,
+	DelayedDamage,
 	FireElementUp,
 	WaterElementUp,
 	LightElementUp,

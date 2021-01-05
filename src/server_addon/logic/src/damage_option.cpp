@@ -11,6 +11,7 @@ const auto damageTypeMap = std::map<std::string, DamageOptionType>{
 	{"PercentStat", DamageOptionType::PercentStat},
 	{"PhyMagIndAttack", DamageOptionType::PhyMagIndAttack},
 	{"ExtrinsicAttackDamage", DamageOptionType::ExtrinsicAttackDamage},
+	{"DelayedDamage", DamageOptionType::DelayedDamage},
 	{"FireElementUp", DamageOptionType::FireElementUp},
 	{"WaterElementUp", DamageOptionType::WaterElementUp},
 	{"LightElementUp", DamageOptionType::LightElementUp},
