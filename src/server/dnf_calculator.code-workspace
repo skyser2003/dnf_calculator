@@ -5,9 +5,6 @@
 		},
 		{
 			"path": "..\\server_addon"
-		},
-		{
-			"path": "..\\tools\\api_fetcher"
 		}
 	],
 	"settings": {},
