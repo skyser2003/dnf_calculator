@@ -7,6 +7,7 @@
 #include <fstream>
 #include <stdlib.h>
 #include <regex>
+#include <filesystem>
 
 #include "nlohmann/json.hpp"
 

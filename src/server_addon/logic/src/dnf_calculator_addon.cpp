@@ -8,7 +8,7 @@ using namespace Napi;
 
 #define REGISTER(func_name) DnfCalculatorAddon::InstanceMethod(#func_name, &DnfCalculatorAddon::func_name)
 
-DnfCalculatorAddon::DnfCalculatorAddon(const Napi::CallbackInfo& info) : ObjectWrap(info), main_(new Main()) {
+DnfCalculatorAddon::DnfCalculatorAddon(const Napi::CallbackInfo& info) : ObjectWrap(info), main_(new Main("data")) {
     Napi::Env env = info.Env();
 
     if (info.Length() < 1) {

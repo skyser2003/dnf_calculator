@@ -5,12 +5,13 @@
 #include "equipment.h"
 #include "equipment_set.h"
 
-Main::Main() :
+Main::Main(const std::string& dataPath)	:
 	weaponJson_(new nlohmann::json()),
 	equipmentJson_(new nlohmann::json()),
 	equipmentSetJson_(new nlohmann::json()),
 	dataJson_(new nlohmann::json())
 {
+	std::filesystem::path path(dataPath);
 
 	size_t apiKeySize;
 	char rawApiKey[255];
@@ -18,10 +19,10 @@ Main::Main() :
 
 	const std::string apiKey = rawApiKey ? rawApiKey : "";
 
-	auto weaponJsonFile = std::ifstream("data/weapon.json");
-	auto equipmentJsonFile = std::ifstream("data/equipment.json");
-	auto equipmentSetJsonFile = std::ifstream("data/equipment_set.json");
-	auto dataJsonFile = std::ifstream("data/dat.json");
+	auto weaponJsonFile = std::ifstream(path / "weapon.json");
+	auto equipmentJsonFile = std::ifstream(path / "equipment.json");
+	auto equipmentSetJsonFile = std::ifstream(path / "equipment_set.json");
+	auto dataJsonFile = std::ifstream(path / "data.json");
 
 	weaponJsonFile >> *weaponJson_;
 	equipmentJsonFile >> *equipmentJson_;

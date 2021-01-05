@@ -22,7 +22,7 @@ private:
 	std::vector<std::unique_ptr<EquipmentSet>> equipmentSets_;
 
 public:
-	Main();
+	Main(const std::string& dataPath = "");
 	~Main();
 
 	const nlohmann::json& getWeaponJson() const;
