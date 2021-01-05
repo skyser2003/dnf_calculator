@@ -4,20 +4,6 @@
 #include "damage_option.h"
 #include "skill_option.h"
 
-const auto equipmentTypeMap = std::map<std::string, EquipmentType>{
-	{"head_shoulder", EquipmentType::HeadShoulder},
-	{"top", EquipmentType::Top},
-	{"bottom", EquipmentType::Bottom},
-	{"belt", EquipmentType::Belt},
-	{"shoes", EquipmentType::Shoes},
-	{"bracelet", EquipmentType::Bracelet},
-	{"necklace", EquipmentType::Necklace},
-	{"ring", EquipmentType::Ring},
-	{"sub_equipment", EquipmentType::SubEquipment},
-	{"magic_stone", EquipmentType::MagicStone},
-	{"earrings", EquipmentType::Earrings}
-};
-
 Equipment::Equipment(int id, const nlohmann::json& json) : Equippable(json), id_(id)
 {
 	this->stringId_ = json["id"].get<std::string>();

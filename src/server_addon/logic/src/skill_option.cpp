@@ -1,12 +1,6 @@
 #include "stdafx.h"
 #include "skill_option.h"
 
-const auto skillTypeMap = std::map<std::string, SkillOptionType>{
-	{"LevelIncrease", SkillOptionType::LevelIncrease},
-	{"CooldownReduce", SkillOptionType::CooldownReduce},
-	{"CooldownRecoveryUp", SkillOptionType::CooldownRecoveryUp}
-};
-
 std::regex levelRegex(R"((\d+)\s*-\s*(\d+))");
 
 SkillOption::SkillOption(const nlohmann::json& json)
