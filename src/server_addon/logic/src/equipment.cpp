@@ -53,3 +53,8 @@ decltype(Equipment::name_) Equipment::getName() const
 {
 	return name_;
 }
+
+decltype(Equipment::type_) Equipment::getType() const
+{
+	return type_;
+}

@@ -31,6 +31,15 @@
     <Filter Include="data">
       <UniqueIdentifier>{7e7295e7-ea05-49fe-b427-fe22efa20898}</UniqueIdentifier>
     </Filter>
+    <Filter Include="calculate">
+      <UniqueIdentifier>{32a4eb04-793d-48a0-9a96-2547e2cfc1be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="calculate\calculator">
+      <UniqueIdentifier>{a1132900-1f7a-4c27-b9d0-b3610940a1cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="calculate\full_gear">
+      <UniqueIdentifier>{1067df7e-8d50-4fdc-91ef-5d5154c25dc5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx\stdafx.h">
@@ -84,6 +93,12 @@
     <ClInclude Include="include\swappable_option.h">
       <Filter>option</Filter>
     </ClInclude>
+    <ClInclude Include="include\calculator.h">
+      <Filter>calculate\calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\full_gear.h">
+      <Filter>calculate\full_gear</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx\stdafx.cpp">
@@ -124,6 +139,12 @@
     </ClCompile>
     <ClCompile Include="src\swappable_option.cpp">
       <Filter>option</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculator.cpp">
+      <Filter>calculate\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\full_gear.cpp">
+      <Filter>calculate\full_gear</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

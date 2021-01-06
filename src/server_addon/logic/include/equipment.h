@@ -26,4 +26,5 @@ public:
 
 	decltype(stringId_) getStringId() const;
 	decltype(name_) getName() const;
+	decltype(type_) getType() const;
 };
