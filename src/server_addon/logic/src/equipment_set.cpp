@@ -13,10 +13,10 @@ EquipmentSet::EquipmentSet(const nlohmann::json& json) : json_(json)
 
 	for (auto& it : setOptions)
 	{
-		auto setOption = std::make_unique<EquipmentSetOption>(id_, it);
+		auto setOption = std::make_shared<EquipmentSetOption>(id_, it);
 		auto piece = setOption->getPiece();
 
-		this->setOptions_.emplace(piece, std::move(setOption));
+		this->setOptions_.emplace(piece, setOption);
 	}
 }
 
@@ -36,7 +36,7 @@ EquipmentSetOption::EquipmentSetOption(EquipmentSetType setId, const nlohmann::j
 	{
 		for (const auto& it : damageOptionsIt.value())
 		{
-			this->damageOptions_.push_back(std::make_unique<DamageOption>(it));
+			this->damageOptions_.push_back(std::make_shared<DamageOption>(it));
 		}
 	}
 
@@ -44,7 +44,7 @@ EquipmentSetOption::EquipmentSetOption(EquipmentSetType setId, const nlohmann::j
 	{
 		for (const auto& it : skillOptionsIt.value())
 		{
-			this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
+			this->skillOptions_.push_back(std::make_shared<SkillOption>(it));
 		}
 	}
 }

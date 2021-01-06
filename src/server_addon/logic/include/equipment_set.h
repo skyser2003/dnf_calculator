@@ -15,7 +15,7 @@ private:
 	EquipmentSetType id_;
 	std::string name_;
 
-	std::map<int, std::unique_ptr<EquipmentSetOption>> setOptions_;
+	std::map<int, std::shared_ptr<EquipmentSetOption>> setOptions_;
 
 public:
 	EquipmentSet(const nlohmann::json& json);
@@ -29,8 +29,8 @@ private:
 	EquipmentSetType setId_;
 	int piece_;
 
-	std::vector<std::unique_ptr<DamageOption>> damageOptions_;
-	std::vector<std::unique_ptr<SkillOption>> skillOptions_;
+	std::vector<std::shared_ptr<DamageOption>> damageOptions_;
+	std::vector<std::shared_ptr<SkillOption>> skillOptions_;
 
 public:
 	EquipmentSetOption(EquipmentSetType setId, const nlohmann::json& json);

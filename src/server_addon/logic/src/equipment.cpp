@@ -21,7 +21,7 @@ Equipment::Equipment(int id, const nlohmann::json& json) : Equippable(json), id_
 	{
 		for (const auto& it : damageOptionsIt.value())
 		{
-			this->damageOptions_.push_back(std::make_unique<DamageOption>(it));
+			this->damageOptions_.push_back(std::make_shared<DamageOption>(it));
 		}
 	}
 
@@ -29,7 +29,7 @@ Equipment::Equipment(int id, const nlohmann::json& json) : Equippable(json), id_
 	{
 		for (const auto& it : skillOptionsIt.value())
 		{
-			this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
+			this->skillOptions_.push_back(std::make_shared<SkillOption>(it));
 		}
 	}
 
