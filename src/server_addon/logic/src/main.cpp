@@ -35,8 +35,7 @@ Main::Main(const std::string& dataPath)	:
 		int uid = weapons_.size();
 		auto weapon = std::make_unique<Weapon>(uid, it);
 		cout << "Weapon uid: " << uid << endl;
-		weaponIdConverter_.insert({ weapon->getStringId(), uid });
-		// weaponIdConverter_.emplace(weapon->getStringId(), uid);
+		weaponIdConverter_.emplace(weapon->getStringId(), uid);
 
 		weapons_.push_back(std::move(weapon));
 	}
