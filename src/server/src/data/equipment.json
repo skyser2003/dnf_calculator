@@ -138,9 +138,9 @@
         ]
     },
     {
-        "id": "mage_unknown_top",
+        "id": "forgotten_mage_top",
         "type": "top",
-        "set_id": "mage_unknown",
+        "set_id": "forgotten_mage",
         "is_mythic": false,
         "damage_options": [
             {
@@ -165,9 +165,9 @@
         ]
     },
     {
-        "id": "mage_unknown_mythic_top",
+        "id": "forgotten_mage_mythic_top",
         "type": "top",
-        "set_id": "mage_unknown",
+        "set_id": "forgotten_mage",
         "is_mythic": true,
         "damage_options": [
             {
@@ -205,9 +205,9 @@
         ]
     },
     {
-        "id": "mage_unknown_bottom",
+        "id": "forgotten_mage_bottom",
         "type": "bottom",
-        "set_id": "mage_unknown",
+        "set_id": "forgotten_mage",
         "is_mythic": false,
         "damage_options": [
             {
@@ -229,9 +229,9 @@
         ]
     },
     {
-        "id": "mage_unknown_head_shoulder",
+        "id": "forgotten_mage_head_shoulder",
         "type": "head_shoulder",
-        "set_id": "mage_unknown",
+        "set_id": "forgotten_mage",
         "is_mythic": false,
         "damage_options": [
             {
@@ -253,9 +253,9 @@
         ]
     },
     {
-        "id": "mage_unknown_belt",
+        "id": "forgotten_mage_belt",
         "type": "belt",
-        "set_id": "mage_unknown",
+        "set_id": "forgotten_mage",
         "is_mythic": false,
         "damage_options": [
             {
@@ -273,9 +273,9 @@
         ]
     },
     {
-        "id": "mage_unknown_shoes",
+        "id": "forgotten_mage_shoes",
         "type": "shoes",
-        "set_id": "mage_unknown",
+        "set_id": "forgotten_mage",
         "is_mythic": false,
         "damage_options": [
             {
@@ -289,33 +289,6 @@
             {
                 "type": "PercentStat",
                 "value": 5
-            }
-        ]
-    },
-    {
-        "id": "celestial_dancer_top",
-        "type": "top",
-        "set_id": "celestial_dancer",
-        "is_mythic": false,
-        "damage_options": [
-            {
-                "type": "AdditionalAttackDamage",
-                "value": 17
-            },
-            {
-                "type": "AdditionalCriAttackDamage",
-                "value": 14
-            },
-            {
-                "type": "PercentStat",
-                "value": 5
-            }
-        ],
-        "skill_options": [
-            {
-                "type": "CooldownReduce",
-                "level_range": "1-45",
-                "value": 10
             }
         ]
     }

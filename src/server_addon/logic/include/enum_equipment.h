@@ -29,6 +29,52 @@ enum class SirocoEquipmentPart
 	Ring = static_cast<int>(EquipmentType::Ring),
 };
 
+enum class EquipmentSetType
+{
+	// Cloth
+	AncientCelebrant,
+	CelestialDancer,
+	ForgottenMage,
+
+	// Leather
+	Veteran,
+	RoyalExecutor,
+	Shadow,
+
+	// Light armor
+	Desert,
+	Tropica,
+	ADP,
+
+	// Heavy armor
+	Blacksmith,
+	Fettering,
+	RuinationHell,
+
+	// Plate armor
+	FlowingPath,
+	MotherNature,
+	CrossroadChoice,
+
+	// Top-Necklace-SubEquipment
+	AbyssWatcher,
+	DuskTraveler,
+	StrangeFate,
+	SwallowedAnger,
+
+	// Bottom-Bracelet-MagicStone
+	BlackMagic,
+	TimeTraveler,
+	FatefulShout,
+	MadnessFollower,
+
+	// Shoes-Ring-Earrings
+	AbyssalSeeker,
+	DimensionTraveler,
+	FatefulDice,
+	ArynTragedy
+};
+
 const auto equipmentTypeMap = std::map<std::string, EquipmentType>{
 	{"head_shoulder", EquipmentType::HeadShoulder},
 	{"top", EquipmentType::Top},
@@ -41,4 +87,41 @@ const auto equipmentTypeMap = std::map<std::string, EquipmentType>{
 	{"sub_equipment", EquipmentType::SubEquipment},
 	{"magic_stone", EquipmentType::MagicStone},
 	{"earrings", EquipmentType::Earrings}
+};
+
+const auto equipmentSetTypeMap = std::map<std::string, EquipmentSetType>{
+	{"ancient_celebrant", EquipmentSetType::AncientCelebrant},
+	{"celestial_dancer", EquipmentSetType::CelestialDancer},
+	{"forgotten_mage", EquipmentSetType::ForgottenMage},
+
+	{"veteran", EquipmentSetType::Veteran},
+	{"royal_executor", EquipmentSetType::RoyalExecutor},
+	{"shadow", EquipmentSetType::Shadow},
+
+	{"desert", EquipmentSetType::Desert},
+	{"tropica", EquipmentSetType::Tropica},
+	{"adp", EquipmentSetType::ADP},
+
+	{"blacksmith", EquipmentSetType::Blacksmith},
+	{"fettering", EquipmentSetType::Fettering},
+	{"ruination_hell", EquipmentSetType::RuinationHell},
+
+	{"flowing_path", EquipmentSetType::FlowingPath},
+	{"mother_nature", EquipmentSetType::MotherNature},
+	{"crossroad_choice", EquipmentSetType::CrossroadChoice},
+
+	{"abyss_watcher", EquipmentSetType::AbyssWatcher},
+	{"dusktraveler", EquipmentSetType::DuskTraveler},
+	{"strange_fate", EquipmentSetType::StrangeFate},
+	{"swallowed_anger", EquipmentSetType::SwallowedAnger},
+
+	{"black_magic", EquipmentSetType::BlackMagic},
+	{"time_traveler", EquipmentSetType::TimeTraveler},
+	{"fateful_shout", EquipmentSetType::FatefulShout},
+	{"madness_follower", EquipmentSetType::MadnessFollower},
+
+	{"abyssal_seeker", EquipmentSetType::AbyssalSeeker},
+	{"dimension_traveler", EquipmentSetType::DimensionTraveler},
+	{"fateful_dice", EquipmentSetType::FatefulDice},
+	{"aryn_tragedy", EquipmentSetType::ArynTragedy}
 };
