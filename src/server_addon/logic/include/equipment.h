@@ -4,6 +4,7 @@
 
 class DamageOption;
 class SkillOption;
+class SwappableOption;
 
 class Equipment : public Equippable
 {
@@ -17,6 +18,7 @@ private:
 
 	std::vector<std::unique_ptr<DamageOption>> damageOptions_;
 	std::vector<std::unique_ptr<SkillOption>> skillOptions_;
+	std::unique_ptr<SwappableOption> swappableOption_;
 
 public:
 	Equipment(int id, const nlohmann::json& json);

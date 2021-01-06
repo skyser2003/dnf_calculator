@@ -81,6 +81,9 @@
     <ClInclude Include="include\enum_character.h">
       <Filter>character</Filter>
     </ClInclude>
+    <ClInclude Include="include\swappable_option.h">
+      <Filter>option</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx\stdafx.cpp">
@@ -118,6 +121,9 @@
     </ClCompile>
     <ClCompile Include="src\dnf_calculator_addon.cpp">
       <Filter>binding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\swappable_option.cpp">
+      <Filter>option</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

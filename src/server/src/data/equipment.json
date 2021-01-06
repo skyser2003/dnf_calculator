@@ -69,7 +69,13 @@
                 "type": "AdditionalAttackDamage",
                 "value": 12
             }
-        ]
+        ],
+        "swappable_option": {
+            "type": "PercentStat",
+            "default_value": 10,
+            "minimum_value": 14,
+            "maximum_value": 20
+        }
     },
     {
         "id": "ancient_celebrant_head_shoulder",

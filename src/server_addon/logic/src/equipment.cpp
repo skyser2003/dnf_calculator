@@ -3,6 +3,7 @@
 
 #include "damage_option.h"
 #include "skill_option.h"
+#include "swappable_option.h"
 
 Equipment::Equipment(int id, const nlohmann::json& json) : Equippable(json), id_(id)
 {
@@ -14,6 +15,7 @@ Equipment::Equipment(int id, const nlohmann::json& json) : Equippable(json), id_
 
 	const auto& damageOptionsIt = json.find("damage_options");
 	const auto& skillOptionsIt = json.find("skill_options");
+	const auto& swappableOptionIt = json.find("swappable_option");
 
 	if (damageOptionsIt != json.end())
 	{
@@ -29,6 +31,11 @@ Equipment::Equipment(int id, const nlohmann::json& json) : Equippable(json), id_
 		{
 			this->skillOptions_.push_back(std::make_unique<SkillOption>(it));
 		}
+	}
+
+	if (swappableOptionIt != json.end())
+	{
+		swappableOption_.reset(new SwappableOption(*swappableOptionIt));
 	}
 }
 

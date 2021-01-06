@@ -114,6 +114,7 @@ popd</Command>
     <ClInclude Include="include\skill_option.h" />
     <ClInclude Include="include\main.h" />
     <ClInclude Include="include\damage_option.h" />
+    <ClInclude Include="include\swappable_option.h" />
     <ClInclude Include="include\weapon.h" />
     <ClInclude Include="stdafx\stdafx.h" />
   </ItemGroup>
@@ -128,6 +129,7 @@ popd</Command>
     <ClCompile Include="src\skill_option.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\damage_option.cpp" />
+    <ClCompile Include="src\swappable_option.cpp" />
     <ClCompile Include="src\weapon.cpp" />
     <ClCompile Include="stdafx\stdafx.cpp" />
   </ItemGroup>
