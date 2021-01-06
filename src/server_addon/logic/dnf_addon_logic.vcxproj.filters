@@ -28,6 +28,9 @@
     <Filter Include="equippable\weapon">
       <UniqueIdentifier>{393dad23-45bd-4268-9893-84f22fe52bae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{7e7295e7-ea05-49fe-b427-fe22efa20898}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx\stdafx.h">
@@ -129,6 +132,18 @@
     </None>
     <None Include="..\lib\index.d.ts">
       <Filter>binding</Filter>
+    </None>
+    <None Include="..\..\server\src\data\weapon.json">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\server\src\data\data.json">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\server\src\data\equipment.json">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\server\src\data\equipment_set.json">
+      <Filter>data</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -132,6 +132,10 @@ popd</Command>
     <ClCompile Include="stdafx\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\server\src\data\data.json" />
+    <None Include="..\..\server\src\data\equipment.json" />
+    <None Include="..\..\server\src\data\equipment_set.json" />
+    <None Include="..\..\server\src\data\weapon.json" />
     <None Include="..\binding.gyp" />
     <None Include="..\lib\index.d.ts" />
     <None Include="..\package.json" />

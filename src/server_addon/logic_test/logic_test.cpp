@@ -14,7 +14,7 @@ namespace logictest
 		
 		TEST_METHOD(TestMethod1)
 		{
-			Main main("../../../../server/data");
+			Main main("../../../../server/src/data");
 			Logger::WriteMessage(main.getEquipmentJson().dump().c_str());
 		}
 	};
