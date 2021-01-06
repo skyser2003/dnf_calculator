@@ -4,7 +4,7 @@
 #include "damage_option.h"
 #include "skill_option.h"
 
-EquipmentSet::EquipmentSet(const nlohmann::json& json) : Equippable(json)
+EquipmentSet::EquipmentSet(const nlohmann::json& json) : json_(json)
 {
 	id_ = equipmentSetTypeMap.at(json["id"].get<std::string>());
 	this->name_ = "";

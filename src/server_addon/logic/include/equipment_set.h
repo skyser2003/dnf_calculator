@@ -7,9 +7,11 @@ class SkillOption;
 
 class EquipmentSetOption;
 
-class EquipmentSet : public Equippable
+class EquipmentSet
 {
 private:
+	const nlohmann::json json_;
+
 	EquipmentSetType id_;
 	std::string name_;
 
