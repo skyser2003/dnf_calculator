@@ -19,15 +19,6 @@
     <Filter Include="option">
       <UniqueIdentifier>{98db5323-9d3a-4c00-8ca0-8238dd07c835}</UniqueIdentifier>
     </Filter>
-    <Filter Include="equippable">
-      <UniqueIdentifier>{1a5daf78-cab7-48a0-8dd4-6d6800aef90f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="equippable\equipment">
-      <UniqueIdentifier>{6c03fc61-8d3c-4633-80ea-0dffc0f2b18d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="equippable\weapon">
-      <UniqueIdentifier>{393dad23-45bd-4268-9893-84f22fe52bae}</UniqueIdentifier>
-    </Filter>
     <Filter Include="data">
       <UniqueIdentifier>{7e7295e7-ea05-49fe-b427-fe22efa20898}</UniqueIdentifier>
     </Filter>
@@ -43,6 +34,27 @@
     <Filter Include="calculate\intermediate">
       <UniqueIdentifier>{b27dff26-b9ab-4fa2-8afb-ce5f59cafb72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="gear">
+      <UniqueIdentifier>{1a5daf78-cab7-48a0-8dd4-6d6800aef90f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gear\equipment">
+      <UniqueIdentifier>{6c03fc61-8d3c-4633-80ea-0dffc0f2b18d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gear\weapon">
+      <UniqueIdentifier>{393dad23-45bd-4268-9893-84f22fe52bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="option\damage">
+      <UniqueIdentifier>{aa3645e2-623b-42fa-bd7b-539fa2e03f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="option\skill">
+      <UniqueIdentifier>{65fd7b0f-15b7-464a-a75a-6ad8f84d9774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="option\swappable">
+      <UniqueIdentifier>{c14bc625-4432-4aee-806a-c57003402171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="option\container">
+      <UniqueIdentifier>{68636792-5eb1-462c-bd32-ad5f02166a0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx\stdafx.h">
@@ -52,13 +64,13 @@
       <Filter>character</Filter>
     </ClInclude>
     <ClInclude Include="include\enum_equipment.h">
-      <Filter>equippable\equipment</Filter>
+      <Filter>gear\equipment</Filter>
     </ClInclude>
     <ClInclude Include="include\equipment.h">
-      <Filter>equippable\equipment</Filter>
+      <Filter>gear\equipment</Filter>
     </ClInclude>
     <ClInclude Include="include\equipment_set.h">
-      <Filter>equippable\equipment</Filter>
+      <Filter>gear\equipment</Filter>
     </ClInclude>
     <ClInclude Include="include\api_item.h">
       <Filter>neople_api</Filter>
@@ -69,32 +81,20 @@
     <ClInclude Include="include\main.h">
       <Filter>main</Filter>
     </ClInclude>
-    <ClInclude Include="include\damage_option.h">
-      <Filter>option</Filter>
-    </ClInclude>
-    <ClInclude Include="include\skill_option.h">
-      <Filter>option</Filter>
-    </ClInclude>
     <ClInclude Include="include\enum_option.h">
       <Filter>option</Filter>
     </ClInclude>
     <ClInclude Include="include\weapon.h">
-      <Filter>equippable\weapon</Filter>
+      <Filter>gear\weapon</Filter>
     </ClInclude>
     <ClInclude Include="include\enum_weapon.h">
-      <Filter>equippable\weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="include\equippable.h">
-      <Filter>equippable</Filter>
+      <Filter>gear\weapon</Filter>
     </ClInclude>
     <ClInclude Include="include\dnf_calculator_addon.h">
       <Filter>binding</Filter>
     </ClInclude>
     <ClInclude Include="include\enum_character.h">
       <Filter>character</Filter>
-    </ClInclude>
-    <ClInclude Include="include\swappable_option.h">
-      <Filter>option</Filter>
     </ClInclude>
     <ClInclude Include="include\calculator.h">
       <Filter>calculate\calculator</Filter>
@@ -105,6 +105,18 @@
     <ClInclude Include="include\intermediate_result.h">
       <Filter>calculate\intermediate</Filter>
     </ClInclude>
+    <ClInclude Include="include\damage_option.h">
+      <Filter>option\damage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\skill_option.h">
+      <Filter>option\skill</Filter>
+    </ClInclude>
+    <ClInclude Include="include\swappable_option.h">
+      <Filter>option\swappable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\equippable.h">
+      <Filter>option\container</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx\stdafx.cpp">
@@ -114,10 +126,10 @@
       <Filter>character</Filter>
     </ClCompile>
     <ClCompile Include="src\equipment.cpp">
-      <Filter>equippable\equipment</Filter>
+      <Filter>gear\equipment</Filter>
     </ClCompile>
     <ClCompile Include="src\equipment_set.cpp">
-      <Filter>equippable\equipment</Filter>
+      <Filter>gear\equipment</Filter>
     </ClCompile>
     <ClCompile Include="src\api_item.cpp">
       <Filter>neople_api</Filter>
@@ -128,23 +140,11 @@
     <ClCompile Include="src\main.cpp">
       <Filter>main</Filter>
     </ClCompile>
-    <ClCompile Include="src\damage_option.cpp">
-      <Filter>option</Filter>
-    </ClCompile>
-    <ClCompile Include="src\skill_option.cpp">
-      <Filter>option</Filter>
-    </ClCompile>
     <ClCompile Include="src\weapon.cpp">
-      <Filter>equippable\weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="src\equippable.cpp">
-      <Filter>equippable</Filter>
+      <Filter>gear\weapon</Filter>
     </ClCompile>
     <ClCompile Include="src\dnf_calculator_addon.cpp">
       <Filter>binding</Filter>
-    </ClCompile>
-    <ClCompile Include="src\swappable_option.cpp">
-      <Filter>option</Filter>
     </ClCompile>
     <ClCompile Include="src\calculator.cpp">
       <Filter>calculate\calculator</Filter>
@@ -154,6 +154,18 @@
     </ClCompile>
     <ClCompile Include="src\intermediate_result.cpp">
       <Filter>calculate\intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\damage_option.cpp">
+      <Filter>option\damage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\skill_option.cpp">
+      <Filter>option\skill</Filter>
+    </ClCompile>
+    <ClCompile Include="src\swappable_option.cpp">
+      <Filter>option\swappable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\equippable.cpp">
+      <Filter>option\container</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
