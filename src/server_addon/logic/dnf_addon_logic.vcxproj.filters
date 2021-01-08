@@ -40,6 +40,9 @@
     <Filter Include="calculate\full_gear">
       <UniqueIdentifier>{1067df7e-8d50-4fdc-91ef-5d5154c25dc5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="calculate\intermediate">
+      <UniqueIdentifier>{b27dff26-b9ab-4fa2-8afb-ce5f59cafb72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx\stdafx.h">
@@ -99,6 +102,9 @@
     <ClInclude Include="include\full_gear.h">
       <Filter>calculate\full_gear</Filter>
     </ClInclude>
+    <ClInclude Include="include\intermediate_result.h">
+      <Filter>calculate\intermediate</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx\stdafx.cpp">
@@ -145,6 +151,9 @@
     </ClCompile>
     <ClCompile Include="src\full_gear.cpp">
       <Filter>calculate\full_gear</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intermediate_result.cpp">
+      <Filter>calculate\intermediate</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

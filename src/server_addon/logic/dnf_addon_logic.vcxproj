@@ -113,6 +113,7 @@ popd</Command>
     <ClInclude Include="include\equipment.h" />
     <ClInclude Include="include\equipment_set.h" />
     <ClInclude Include="include\full_gear.h" />
+    <ClInclude Include="include\intermediate_result.h" />
     <ClInclude Include="include\skill_option.h" />
     <ClInclude Include="include\main.h" />
     <ClInclude Include="include\damage_option.h" />
@@ -130,6 +131,7 @@ popd</Command>
     <ClCompile Include="src\equipment_set.cpp" />
     <ClCompile Include="src\equippable.cpp" />
     <ClCompile Include="src\full_gear.cpp" />
+    <ClCompile Include="src\intermediate_result.cpp" />
     <ClCompile Include="src\skill_option.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\damage_option.cpp" />
