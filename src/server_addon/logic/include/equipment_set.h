@@ -2,9 +2,6 @@
 
 #include "option_container.h"
 
-class DamageOption;
-class SkillOption;
-
 class EquipmentSetOption;
 
 class EquipmentSet
@@ -23,14 +20,11 @@ public:
 	decltype(id_) getId() const;
 };
 
-class EquipmentSetOption
+class EquipmentSetOption : public OptionContainer
 {
 private:
 	EquipmentSetType setId_;
 	int piece_;
-
-	std::vector<std::shared_ptr<DamageOption>> damageOptions_;
-	std::vector<std::shared_ptr<SkillOption>> skillOptions_;
 
 public:
 	EquipmentSetOption(EquipmentSetType setId, const nlohmann::json& json);
