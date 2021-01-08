@@ -114,7 +114,7 @@
     <ClInclude Include="include\swappable_option.h">
       <Filter>option\swappable</Filter>
     </ClInclude>
-    <ClInclude Include="include\equippable.h">
+    <ClInclude Include="include\option_container.h">
       <Filter>option\container</Filter>
     </ClInclude>
   </ItemGroup>
@@ -164,7 +164,7 @@
     <ClCompile Include="src\swappable_option.cpp">
       <Filter>option\swappable</Filter>
     </ClCompile>
-    <ClCompile Include="src\equippable.cpp">
+    <ClCompile Include="src\option_container.cpp">
       <Filter>option\container</Filter>
     </ClCompile>
   </ItemGroup>

@@ -5,7 +5,7 @@
 #include "skill_option.h"
 #include "swappable_option.h"
 
-Weapon::Weapon(int id, const nlohmann::json& json) : Equippable(json), id_(id)
+Weapon::Weapon(int id, const nlohmann::json& json) : OptionContainer(json), id_(id)
 {
 	this->stringId_ = json["id"].get<std::string>();
 	this->name_ = json["name"].get<std::string>();

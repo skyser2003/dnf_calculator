@@ -1,12 +1,12 @@
 #pragma once
 
-#include "equippable.h"
+#include "option_container.h"
 
 class DamageOption;
 class SkillOption;
 class SwappableOption;
 
-class Weapon : public Equippable
+class Weapon : public OptionContainer
 {
 private:
 	int id_;

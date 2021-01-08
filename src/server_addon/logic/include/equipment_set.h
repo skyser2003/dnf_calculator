@@ -1,6 +1,6 @@
 #pragma once
 
-#include "equippable.h"
+#include "option_container.h"
 
 class DamageOption;
 class SkillOption;
