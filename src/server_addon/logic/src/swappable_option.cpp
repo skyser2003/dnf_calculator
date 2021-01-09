@@ -4,7 +4,6 @@
 SwappableOption::SwappableOption(const nlohmann::json& json)
 {
 	type_ = damageTypeMap.at(json["type"].get<std::string>());
-	defaultValue_ = json["default_value"].get<decltype(defaultValue_)>();
-	minValue_ = json["minimum_value"].get<decltype(minValue_)>();
-	maxValue_ = json["maximum_value"].get<decltype(maxValue_)>();
+	defaultValue_ = json["value"].get<decltype(defaultValue_)>();
+	maxValue_ = defaultValue_ + 8;
 }

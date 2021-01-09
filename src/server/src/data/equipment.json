@@ -72,9 +72,7 @@
         ],
         "swappable_option": {
             "type": "AdditionalAttackDamage",
-            "default_value": 12,
-            "minimum_value": 14,
-            "maximum_value": 20
+            "value": 12
         }
     },
     {

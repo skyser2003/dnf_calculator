@@ -5,7 +5,6 @@ class SwappableOption
 private:
 	DamageOptionType type_;
 	float defaultValue_;
-	float minValue_;
 	float maxValue_;
 
 public:
