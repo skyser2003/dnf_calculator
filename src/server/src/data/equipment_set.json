@@ -19,7 +19,7 @@
                 "piece": 3,
                 "damage_options": [
                     {
-                        "type": "PhyMagIndAttack",
+                        "type": "ExtrinsicAttackDamage",
                         "value": 8
                     },
                     {
@@ -32,12 +32,8 @@
                 "piece": 5,
                 "damage_options": [
                     {
-                        "type": "AdditionalCriAttackDamage",
-                        "value": 21
-                    },
-                    {
                         "type": "ExtrinsicAttackDamage",
-                        "value": 25
+                        "value": 45
                     }
                 ]
             }
