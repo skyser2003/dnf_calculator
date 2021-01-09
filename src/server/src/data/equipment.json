@@ -35,7 +35,11 @@
             },
             {
                 "type": "AllAttack",
-                "value": 12
+                "value": 6
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 6
             },
             {
                 "type": "BonusDamage",
@@ -64,15 +68,11 @@
             {
                 "type": "PhyMagIndAttack",
                 "value": 10
-            },
-            {
-                "type": "AdditionalAttackDamage",
-                "value": 12
             }
         ],
         "swappable_option": {
-            "type": "PercentStat",
-            "default_value": 10,
+            "type": "AdditionalAttackDamage",
+            "default_value": 12,
             "minimum_value": 14,
             "maximum_value": 20
         }
