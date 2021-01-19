@@ -342,7 +342,7 @@
         "type": "bottom",
         "set_id": "veteran",
         "is_mythic": false,
-        "damage_options": [
+        "swappable_options": [
             {
                 "type": "AdditionalCriAttackDamage",
                 "value": 34,
