@@ -3,22 +3,7 @@
 
 #include "equipment.h"
 
-void Character::setEquipment(EquipmentType equipPart, Equipment& equipment)
+void Character::addElement(AttackElementType element)
 {
-	equipments.insert({ equipPart, equipment });
-}
-
-const std::map<FinalDamageOptionType, float> Character::calcStats() const
-{
-	auto stats = decltype(calcStats())();
-
-	float baseAttackDamage = 0;
-	float baseCriAttackDamage = 0;
-
-	for (auto& it : equipments)
-	{
-		const auto& equipment = it.second;
-	}
-
-	return stats;
+	this->elements_.emplace(element);
 }

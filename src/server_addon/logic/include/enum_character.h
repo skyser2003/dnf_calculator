@@ -101,3 +101,11 @@ enum class CharacterSubClassType
 	DarkKnight,
 	Creator
 };
+
+enum class AttackElementType
+{
+	Fire,
+	Water,
+	Light,
+	Shadow
+};

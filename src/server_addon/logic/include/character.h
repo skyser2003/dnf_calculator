@@ -6,10 +6,10 @@ class Equipment;
 
 class Character
 {
-public:
-	void setEquipment(EquipmentType equipPart, Equipment& equipment);
-	const std::map<FinalDamageOptionType, float> calcStats() const;
-
 private:
-	std::map<EquipmentType, Equipment&> equipments;
+	std::set<AttackElementType> elements_;
+
+public:
+	void addElement(AttackElementType element);
+
 };
