@@ -289,5 +289,109 @@
                 "value": 5
             }
         ]
+    },
+    {
+        "id": "veteran_top",
+        "type": "top",
+        "set_id": "veteran",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PhyMagIndAttack",
+                "value": 34
+            }
+        ]
+    },
+    {
+        "id": "veteran_mythic_top",
+        "type": "top",
+        "set_id": "veteran",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "PhyMagIndAttack",
+                "value": 28
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 6
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 4
+            },
+            {
+                "type": "PhyMagIndAttack",
+                "value": 3
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "PercentStat",
+                "value": 8
+            }
+        ]
+    },
+    {
+        "id": "veteran_bottom",
+        "type": "bottom",
+        "set_id": "veteran",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 34
+            }
+        ]
+    },
+    {
+        "id": "veteran_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "veteran",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 34
+            }
+        ]
+    },
+    {
+        "id": "veteran_belt",
+        "type": "belt",
+        "set_id": "veteran",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 68
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "1-85",
+                "value": 1
+            },
+            {
+                "type": "LevelIncrease",
+                "level_range": "100-100",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": "veteran_shoes",
+        "type": "shoes",
+        "set_id": "veteran",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 34
+            }
+        ]
     }
 ]

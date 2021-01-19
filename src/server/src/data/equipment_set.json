@@ -150,5 +150,49 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "veteran",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "CriChance",
+                        "value": 10
+                    },
+                    {
+                        "type": "PercentStat",
+                        "value": 23
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AllElementsUp",
+                        "value": 24
+                    },
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 24
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 12
+                    },
+                    {
+                        "type": "BonusDamage",
+                        "value": 28
+                    }
+                ]
+            }
+        ]
     }
 ]
