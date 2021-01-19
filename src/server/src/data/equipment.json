@@ -406,5 +406,117 @@
                 }
             }
         ]
+    },
+    {
+        "id": "royal_executor_top",
+        "type": "top",
+        "set_id": "royal_executor",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 19
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 14
+            }
+        ]
+    },
+    {
+        "id": "royal_executor_mythic_top",
+        "type": "top",
+        "set_id": "royal_executor",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 19
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 14
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 5
+            },
+            {
+                "type": "BonusDamage",
+                "value": 6
+            },
+            {
+                "type": "AllAttack",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "royal_executor_bottom",
+        "type": "bottom",
+        "set_id": "royal_executor",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 16
+            }
+        ],
+        "swappable_option": {
+            "type": "AllAttack",
+            "value": 17
+        }
+    },
+    {
+        "id": "royal_executor_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "royal_executor",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 20
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "royal_executor_belt",
+        "type": "belt",
+        "set_id": "royal_executor",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 18
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 15
+            }
+        ]
+    },
+    {
+        "id": "royal_executor_shoes",
+        "type": "shoes",
+        "set_id": "royal_executor",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllAttack",
+                "value": 21
+            },
+            {
+                "type": "PercentStat",
+                "value": 11
+            }
+        ]
     }
 ]

@@ -197,5 +197,45 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "royal_executor",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "AllElementsUp",
+                        "value": 52
+                    },
+                    {
+                        "type": "AdditionalAttackDamage",
+                        "value": 16
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AllElementsUp",
+                        "value": 62
+                    },
+                    {
+                        "type": "PercentStat",
+                        "value": 15
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "ElementalBonusDamage",
+                        "value": 20
+                    }
+                ]
+            }
+        ]
     }
 ]
