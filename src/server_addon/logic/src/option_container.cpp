@@ -27,6 +27,16 @@ OptionContainer::OptionContainer(const nlohmann::json& json)
 	}
 }
 
+const decltype(OptionContainer::damageOptions_)& OptionContainer::getDamageOptions() const
+{
+	return damageOptions_;
+}
+
+const decltype(OptionContainer::skillOptions_)& OptionContainer::getSkillOptions() const
+{
+	return skillOptions_;
+}
+
 SwappableOptionContainer::SwappableOptionContainer(const nlohmann::json& json) : OptionContainer(json)
 {
 	const auto& swappableOptionIt = json.find("swappable_option");

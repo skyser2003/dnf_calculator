@@ -12,6 +12,9 @@ protected:
 
 public:
 	OptionContainer(const nlohmann::json& json);
+
+	const decltype(damageOptions_)& getDamageOptions() const;
+	const decltype(skillOptions_)& getSkillOptions() const;
 };
 
 class SwappableOptionContainer : public OptionContainer
