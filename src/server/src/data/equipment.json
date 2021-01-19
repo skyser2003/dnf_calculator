@@ -298,7 +298,10 @@
         "damage_options": [
             {
                 "type": "PhyMagIndAttack",
-                "value": 34
+                "value": 34,
+                "options": {
+                    "veteran_value": 1
+                }
             }
         ]
     },
@@ -342,7 +345,10 @@
         "damage_options": [
             {
                 "type": "AdditionalCriAttackDamage",
-                "value": 34
+                "value": 34,
+                "options": {
+                    "veteran_value": 1
+                }
             }
         ]
     },
@@ -354,7 +360,10 @@
         "damage_options": [
             {
                 "type": "ExtrinsicAttackDamage",
-                "value": 34
+                "value": 34,
+                "options": {
+                    "veteran_value": 1
+                }
             }
         ]
     },
@@ -366,7 +375,10 @@
         "damage_options": [
             {
                 "type": "AllElementsUp",
-                "value": 68
+                "value": 68,
+                "options": {
+                    "veteran_value": 4
+                }
             }
         ],
         "skill_options": [
@@ -390,7 +402,10 @@
         "damage_options": [
             {
                 "type": "PercentStat",
-                "value": 34
+                "value": 34,
+                "options": {
+                    "veteran_value": 1
+                }
             }
         ]
     }

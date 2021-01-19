@@ -189,7 +189,10 @@
                     },
                     {
                         "type": "BonusDamage",
-                        "value": 28
+                        "value": 28,
+                        "options": {
+                            "veteran_value": 1
+                        }
                     }
                 ]
             }
