@@ -32,7 +32,7 @@ Main::Main(const std::string& dataPath)	:
 	// Data
 	for (const auto& it : *weaponJson_)
 	{
-		int uid = weapons_.size();
+		int uid = static_cast<int>(weapons_.size());
 		auto weapon = std::make_unique<Weapon>(uid, it);
 		weaponIdConverter_.emplace(weapon->getStringId(), uid);
 
@@ -41,7 +41,7 @@ Main::Main(const std::string& dataPath)	:
 
 	for (const auto& it : *equipmentJson_)
 	{
-		int uid = equipments_.size();
+		int uid = static_cast<int>(equipments_.size());
 		auto equipment = std::make_unique<Equipment>(uid, it);
 		equipmentIdConverter_.emplace(equipment->getStringId(), uid);
 
