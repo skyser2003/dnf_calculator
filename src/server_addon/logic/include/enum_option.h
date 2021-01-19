@@ -15,7 +15,7 @@ enum class DamageOptionType
 	FireElementUp,
 	WaterElementUp,
 	LightElementUp,
-	DarkElementUp,
+	ShadowElementUp,
 	AllElementsUp,
 	CriChance
 };
@@ -39,7 +39,7 @@ enum class FinalDamageOptionType
 	FireElementUp,
 	WaterElementUp,
 	LightElementUp,
-	DarkElementUp
+	ShadowElementUp
 };
 
 enum class FinalSkillOptionType
@@ -62,7 +62,7 @@ const auto damageTypeMap = std::map<std::string, DamageOptionType>{
 	{"FireElementUp", DamageOptionType::FireElementUp},
 	{"WaterElementUp", DamageOptionType::WaterElementUp},
 	{"LightElementUp", DamageOptionType::LightElementUp},
-	{"DarkElementUp", DamageOptionType::DarkElementUp},
+	{"ShadowElementUp", DamageOptionType::ShadowElementUp},
 	{"AllElementsUp", DamageOptionType::AllElementsUp},
 	{"CriChance", DamageOptionType::CriChance}
 };
