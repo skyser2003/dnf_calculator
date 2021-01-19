@@ -342,15 +342,13 @@
         "type": "bottom",
         "set_id": "veteran",
         "is_mythic": false,
-        "swappable_options": [
-            {
-                "type": "AdditionalCriAttackDamage",
-                "value": 34,
-                "options": {
-                    "veteran_value": 1
-                }
+        "swappable_option": {
+            "type": "AdditionalCriAttackDamage",
+            "value": 34,
+            "options": {
+                "veteran_value": 1
             }
-        ]
+        }
     },
     {
         "id": "veteran_head_shoulder",
