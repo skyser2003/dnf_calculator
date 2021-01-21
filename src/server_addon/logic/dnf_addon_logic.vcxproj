@@ -109,6 +109,7 @@ popd</Command>
     <ClInclude Include="include\enum_equipment.h" />
     <ClInclude Include="include\enum_option.h" />
     <ClInclude Include="include\enum_weapon.h" />
+    <ClInclude Include="include\extra_option.h" />
     <ClInclude Include="include\option_container.h" />
     <ClInclude Include="include\equipment.h" />
     <ClInclude Include="include\equipment_set.h" />
@@ -129,6 +130,7 @@ popd</Command>
     <ClCompile Include="src\dnf_calculator_addon.cpp" />
     <ClCompile Include="src\equipment.cpp" />
     <ClCompile Include="src\equipment_set.cpp" />
+    <ClCompile Include="src\extra_option.cpp" />
     <ClCompile Include="src\full_gear.cpp" />
     <ClCompile Include="src\intermediate_result.cpp" />
     <ClCompile Include="src\option_container.cpp" />

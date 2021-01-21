@@ -55,6 +55,9 @@
     <Filter Include="option\container">
       <UniqueIdentifier>{68636792-5eb1-462c-bd32-ad5f02166a0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="option\extra">
+      <UniqueIdentifier>{aa637085-f194-4222-8be3-4da235be265f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx\stdafx.h">
@@ -117,6 +120,9 @@
     <ClInclude Include="include\option_container.h">
       <Filter>option\container</Filter>
     </ClInclude>
+    <ClInclude Include="include\extra_option.h">
+      <Filter>option\extra</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx\stdafx.cpp">
@@ -166,6 +172,9 @@
     </ClCompile>
     <ClCompile Include="src\option_container.cpp">
       <Filter>option\container</Filter>
+    </ClCompile>
+    <ClCompile Include="src\extra_option.cpp">
+      <Filter>option\extra</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
