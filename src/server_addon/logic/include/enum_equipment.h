@@ -39,7 +39,7 @@ enum class EquipmentSetType
 	// Leather
 	Veteran,
 	RoyalExecutor,
-	Shadow,
+	ShadowyCompanion,
 
 	// Light armor
 	Desert,
@@ -96,7 +96,7 @@ const auto equipmentSetTypeMap = std::map<std::string, EquipmentSetType>{
 
 	{"veteran", EquipmentSetType::Veteran},
 	{"royal_executor", EquipmentSetType::RoyalExecutor},
-	{"shadow", EquipmentSetType::Shadow},
+	{"shadowy_companion", EquipmentSetType::ShadowyCompanion},
 
 	{"desert", EquipmentSetType::Desert},
 	{"tropica", EquipmentSetType::Tropica},
