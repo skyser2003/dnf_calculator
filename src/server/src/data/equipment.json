@@ -518,5 +518,137 @@
                 "value": 11
             }
         ]
+    },
+    {
+        "id": "shadowy_companion_top",
+        "type": "top",
+        "set_id": "shadowy_companion",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 18
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "id": "shadowy_companion_mythic_top",
+        "type": "top",
+        "set_id": "shadowy_companion",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 18
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 4
+            },
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "FixedPhyMagIndAttack",
+                "value": 170
+            }
+        ]
+    },
+    {
+        "id": "shadowy_companion_bottom",
+        "type": "bottom",
+        "set_id": "shadowy_companion",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 4
+            }
+        ],
+        "swappable_option": {
+            "type": "AdditionalAttackDamage",
+            "value": 18
+        }
+    },
+    {
+        "id": "shadowy_companion_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "shadowy_companion",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 18
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "id": "shadowy_companion_belt",
+        "type": "belt",
+        "set_id": "shadowy_companion",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "BonusDamage",
+                "value": 18
+            },
+            {
+                "type": "AllAttack",
+                "value": 10
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "id": "shadowy_companion_shoes",
+        "type": "shoes",
+        "set_id": "shadowy_companion",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "BonusDamage",
+                "value": 18
+            },
+            {
+                "type": "AllAttack",
+                "value": 10
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 4
+            }
+        ]
     }
 ]

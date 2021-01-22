@@ -237,5 +237,53 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "shadowy_companion",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "AllElementsUp",
+                        "value": 55
+                    },
+                    {
+                        "type": "PercentStat",
+                        "value": 16
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 16
+                    },
+                    {
+                        "type": "AllAttack",
+                        "value": 10
+                    },
+                    {
+                        "type": "AllAttack",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 35
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 8
+                    }
+                ]
+            }
+        ]
     }
 ]
