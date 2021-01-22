@@ -650,5 +650,129 @@
                 "value": 4
             }
         ]
+    },
+    {
+        "id": "desert_top",
+        "type": "top",
+        "set_id": "desert",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 28
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 6
+            }
+        ]
+    },
+    {
+        "id": "desert_mythic_top",
+        "type": "top",
+        "set_id": "desert",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 28
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 6
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 8
+            },
+            {
+                "type": "PercentStat",
+                "value": 8
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 15
+            }
+        ]
+    },
+    {
+        "id": "desert_bottom",
+        "type": "bottom",
+        "set_id": "desert",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "BonusDamage",
+                "value": 10
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 6
+            }
+        ],
+        "swappable_option": {
+            "type": "AdditionalCriAttackDamage",
+            "value": 16
+        }
+    },
+    {
+        "id": "desert_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "desert",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "CriChance",
+                "value": 5
+            },
+            {
+                "type": "BonusDamage",
+                "value": 16
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 6
+            }
+        ]
+    },
+    {
+        "id": "desert_belt",
+        "type": "belt",
+        "set_id": "desert",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 16
+            },
+            {
+                "type": "BonusDamage",
+                "value": 10
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 6
+            }
+        ]
+    },
+    {
+        "id": "desert_shoes",
+        "type": "shoes",
+        "set_id": "desert",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 28
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 6
+            }
+        ]
     }
 ]

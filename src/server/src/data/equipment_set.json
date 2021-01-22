@@ -285,5 +285,45 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "desert",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "PercentPhyMagIndAttack",
+                        "value": 22
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 6
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AllElementsUp",
+                        "value": 60
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 15
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 44
+                    }
+                ]
+            }
+        ]
     }
 ]
