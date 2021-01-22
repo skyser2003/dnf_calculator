@@ -49,28 +49,31 @@ enum class FinalSkillOptionType
 	CooldownReduce
 };
 
+#define DamageTypePair(NAME) {#NAME, DamageOptionType::NAME}
+#define SkillTypePair(NAME) {#NAME, SkillOptionType::NAME}
+
 const auto damageTypeMap = std::map<std::string, DamageOptionType>{
-	{"BaseAttackDamage", DamageOptionType::BaseAttackDamage},
-	{"BaseCriAttackDamage", DamageOptionType::BaseCriAttackDamage},
-	{"AdditionalAttackDamage", DamageOptionType::AdditionalAttackDamage},
-	{"AdditionalCriAttackDamage", DamageOptionType::AdditionalCriAttackDamage},
-	{"BonusDamage", DamageOptionType::BonusDamage},
-	{"ElementalBonusDamage", DamageOptionType::ElementalBonusDamage},
-	{"AllAttack", DamageOptionType::AllAttack},
-	{"PercentStat", DamageOptionType::PercentStat},
-	{"PhyMagIndAttack", DamageOptionType::PhyMagIndAttack},
-	{"ExtrinsicAttackDamage", DamageOptionType::ExtrinsicAttackDamage},
-	{"DelayedDamage", DamageOptionType::DelayedDamage},
-	{"FireElementUp", DamageOptionType::FireElementUp},
-	{"WaterElementUp", DamageOptionType::WaterElementUp},
-	{"LightElementUp", DamageOptionType::LightElementUp},
-	{"ShadowElementUp", DamageOptionType::ShadowElementUp},
-	{"AllElementsUp", DamageOptionType::AllElementsUp},
-	{"CriChance", DamageOptionType::CriChance}
+	DamageTypePair(BaseAttackDamage),
+	DamageTypePair(BaseCriAttackDamage),
+	DamageTypePair(AdditionalAttackDamage),
+	DamageTypePair(AdditionalCriAttackDamage),
+	DamageTypePair(BonusDamage),
+	DamageTypePair(ElementalBonusDamage),
+	DamageTypePair(AllAttack),
+	DamageTypePair(PercentStat),
+	DamageTypePair(PhyMagIndAttack),
+	DamageTypePair(ExtrinsicAttackDamage),
+	DamageTypePair(DelayedDamage),
+	DamageTypePair(FireElementUp),
+	DamageTypePair(WaterElementUp),
+	DamageTypePair(LightElementUp),
+	DamageTypePair(ShadowElementUp),
+	DamageTypePair(AllElementsUp),
+	DamageTypePair(CriChance)
 };
 
 const auto skillTypeMap = std::map<std::string, SkillOptionType>{
-	{"LevelIncrease", SkillOptionType::LevelIncrease},
-	{"CooldownReduce", SkillOptionType::CooldownReduce},
-	{"CooldownRecoveryUp", SkillOptionType::CooldownRecoveryUp}
+	SkillTypePair(LevelIncrease),
+	SkillTypePair(CooldownReduce),
+	SkillTypePair(CooldownRecoveryUp)
 };
