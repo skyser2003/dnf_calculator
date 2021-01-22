@@ -774,5 +774,111 @@
                 "value": 6
             }
         ]
+    },
+    {
+        "id": "tropica_top",
+        "type": "top",
+        "set_id": "tropica",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 16
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 15
+            }
+        ]
+    },
+    {
+        "id": "tropica_mythic_top",
+        "type": "top",
+        "set_id": "tropica",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 16
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 8
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 9
+            },
+            {
+                "type": "AllAttack",
+                "value": 10
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 8
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 4
+            },
+            {
+                "type": "PercentStat",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": "tropica_bottom",
+        "type": "bottom",
+        "set_id": "tropica",
+        "is_mythic": false,
+        "swappable_option": {
+            "type": "PercentStat",
+            "value": 33
+        }
+    },
+    {
+        "id": "tropica_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "tropica",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 33
+            }
+        ]
+    },
+    {
+        "id": "tropica_belt",
+        "type": "belt",
+        "set_id": "tropica",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 60
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 16
+            }
+        ]
+    },
+    {
+        "id": "tropica_shoes",
+        "type": "shoes",
+        "set_id": "tropica",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "CriChance",
+                "value": 5
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 30
+            }
+        ]
     }
 ]

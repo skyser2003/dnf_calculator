@@ -325,5 +325,60 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "tropica",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "AllElementsUp",
+                        "value": 40
+                    },
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 18
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "CriChance",
+                        "value": 5
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 20
+                    },
+                    {
+                        "type": "BonusDamage",
+                        "value": 10
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "AllAttack",
+                        "value": 26
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 8
+                    }
+                ],
+                "skill_options": [
+                    {
+                        "type": "CooldownReduce",
+                        "level_range": "1-100",
+                        "value": 15
+                    }
+                ]
+            }
+        ]
     }
 ]
