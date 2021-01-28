@@ -29,6 +29,15 @@ enum class SkillOptionType
 	CooldownRecoveryUp
 };
 
+enum class ExtraOptionType
+{
+	AttackSpeed,
+	MoveSpeed,
+	CastSpeed,
+	PartialSuperArmor,
+	FullSuperArmor
+};
+
 enum class FinalDamageOptionType
 {
 	AttackDamage,
@@ -52,6 +61,7 @@ enum class FinalSkillOptionType
 
 #define DamageTypePair(NAME) {#NAME, DamageOptionType::NAME}
 #define SkillTypePair(NAME) {#NAME, SkillOptionType::NAME}
+#define ExtraTypePair(NAME) {#NAME, ExtraOptionType::NAME}
 
 const auto damageTypeMap = std::map<std::string, DamageOptionType>{
 	DamageTypePair(BaseAttackDamage),
@@ -78,4 +88,12 @@ const auto skillTypeMap = std::map<std::string, SkillOptionType>{
 	SkillTypePair(LevelIncrease),
 	SkillTypePair(CooldownReduce),
 	SkillTypePair(CooldownRecoveryUp)
+};
+
+const auto extraTypeMap = std::map<std::string, ExtraOptionType>{
+	ExtraTypePair(AttackSpeed),
+	ExtraTypePair(MoveSpeed),
+	ExtraTypePair(CastSpeed),
+	ExtraTypePair(PartialSuperArmor),
+	ExtraTypePair(FullSuperArmor)
 };
