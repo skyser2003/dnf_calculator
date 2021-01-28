@@ -880,5 +880,121 @@
                 "value": 30
             }
         ]
+    },
+    {
+        "id": "adp_top",
+        "type": "top",
+        "set_id": "adp",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 34
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "45-45",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "id": "adp_mythic_top",
+        "type": "top",
+        "set_id": "adp",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 28
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 6
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "45-45",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "id": "adp_bottom",
+        "type": "bottom",
+        "set_id": "adp",
+        "is_mythic": false,
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "35-35",
+                "value": 2
+            }
+        ],
+        "swappable_option": {
+            "type": "AdditionalCriAttackDamage",
+            "value": 34
+        }
+    },
+    {
+        "id": "adp_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "adp",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 34
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "60-60",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "id": "adp_belt",
+        "type": "belt",
+        "set_id": "adp",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 34
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "60-60",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "id": "adp_shoes",
+        "type": "shoes",
+        "set_id": "adp",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllAttack",
+                "value": 34
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "70-70",
+                "value": 2
+            }
+        ]
     }
 ]

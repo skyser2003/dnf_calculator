@@ -380,5 +380,45 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "adp",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "AllAttack",
+                        "value": 15
+                    },
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 15
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "PercentPhyMagIndAttack",
+                        "value": 32
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "ElementalBonusDamage",
+                        "value": 12
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 10
+                    }
+                ]
+            }
+        ]
     }
 ]
