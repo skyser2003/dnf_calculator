@@ -1210,5 +1210,87 @@
                 "value": 1
             }
         ]
+    },
+    {
+        "id": "fettering_top",
+        "type": "top",
+        "set_id": "fettering",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 35
+            }
+        ]
+    },
+    {
+        "id": "fettering_mythic_top",
+        "type": "top",
+        "set_id": "fettering",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 35
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 10
+            },
+            {
+                "type": "BonusDamage",
+                "value": 10
+            }
+        ]
+    },
+    {
+        "id": "fettering_bottom",
+        "type": "bottom",
+        "set_id": "fettering",
+        "is_mythic": false,
+        "swappable_option": {
+            "type": "PercentPhyMagIndAttack",
+            "value": 35
+        }
+    },
+    {
+        "id": "fettering_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "fettering",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 34
+            }
+        ]
+    },
+    {
+        "id": "fettering_belt",
+        "type": "belt",
+        "set_id": "fettering",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 35
+            }
+        ]
+    },
+    {
+        "id": "fettering_shoes",
+        "type": "shoes",
+        "set_id": "fettering",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllAttack",
+                "value": 35
+            }
+        ]
     }
 ]
