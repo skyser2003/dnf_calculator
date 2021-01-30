@@ -1108,5 +1108,107 @@
                 "value": 16
             }
         ]
+    },
+    {
+        "id": "blacksmith_top",
+        "type": "top",
+        "set_id": "blacksmith",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllAttack",
+                "value": 34
+            }
+        ]
+    },
+    {
+        "id": "blacksmith_mythic_top",
+        "type": "top",
+        "set_id": "blacksmith",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AllAttack",
+                "value": 34
+            },
+            {
+                "type": "BonusDamage",
+                "value": 9
+            },
+            {
+                "type": "PercentStat",
+                "value": 4
+            },
+            {
+                "type": "AllAttack",
+                "value": 4
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 7
+            }
+        ]
+    },
+    {
+        "id": "blacksmith_bottom",
+        "type": "bottom",
+        "set_id": "blacksmith",
+        "is_mythic": false,
+        "swappable_option": {
+            "type": "BonusDamage",
+            "value": 34
+        }
+    },
+    {
+        "id": "blacksmith_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "blacksmith",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 20
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "blacksmith_belt",
+        "type": "belt",
+        "set_id": "blacksmith",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 34
+            }
+        ]
+    },
+    {
+        "id": "blacksmith_shoes",
+        "type": "shoes",
+        "set_id": "blacksmith",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 70
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "LevelIncrease",
+                "level_range": "1-85",
+                "value": 1
+            },
+            {
+                "type": "LevelIncrease",
+                "level_range": "100-100",
+                "value": 1
+            }
+        ]
     }
 ]

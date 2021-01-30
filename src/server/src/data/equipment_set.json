@@ -472,5 +472,85 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "blacksmith",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "PercentStat",
+                        "value": 14
+                    },
+                    {
+                        "type": "AllAttack",
+                        "value": 14
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "PercentPhyMagIndAttack",
+                        "value": 21
+                    }
+                ],
+                "skill_options": [
+                    {
+                        "type": "CooldownReduce",
+                        "level_range": "1-45",
+                        "value": 20,
+                        "options": {
+                            "replace": {
+                                "blacksmith_mythic_top": 30
+                            }
+                        }
+                    },
+                    {
+                        "type": "CooldownReduce",
+                        "level_range": "55-80",
+                        "value": 20,
+                        "options": {
+                            "replace": {
+                                "blacksmith_mythic_top": 30
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "BonusDamage",
+                        "value": 17
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 20
+                    }
+                ],
+                "skill_options": [
+                    {
+                        "type": "CooldownReduce",
+                        "level_range": "50-50",
+                        "value": 17
+                    },
+                    {
+                        "type": "CooldownReduce",
+                        "level_range": "85-85",
+                        "value": 17
+                    }
+                    ,
+                    {
+                        "type": "CooldownReduce",
+                        "level_range": "100-100",
+                        "value": 17
+                    }
+                ]
+            }
+        ]
     }
 ]
