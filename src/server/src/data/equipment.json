@@ -996,5 +996,117 @@
                 "value": 2
             }
         ]
+    },
+    {
+        "id": "ruination_hell_top",
+        "type": "top",
+        "set_id": "ruination_hell",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 16
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 16
+            }
+        ]
+    },
+    {
+        "id": "ruination_hell_mythic_top",
+        "type": "top",
+        "set_id": "ruination_hell",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 16
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 16
+            },
+            {
+                "type": "DelayedDamage",
+                "value": 5
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "BonusDamage",
+                "value": 4
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 9
+            }
+        ]
+    },
+    {
+        "id": "ruination_hell_bottom",
+        "type": "bottom",
+        "set_id": "ruination_hell",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllAttack",
+                "value": 16
+            }
+        ],
+        "swappable_option": {
+            "type": "PercentStat",
+            "value": 16
+        }
+    },
+    {
+        "id": "ruination_hell_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "ruination_hell",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 16
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 16
+            }
+        ]
+    },
+    {
+        "id": "ruination_hell_belt",
+        "type": "belt",
+        "set_id": "ruination_hell",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 16
+            },
+            {
+                "type": "PercentStat",
+                "value": 16
+            }
+        ]
+    },
+    {
+        "id": "ruination_hell_shoes",
+        "type": "shoes",
+        "set_id": "ruination_hell",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 16
+            },
+            {
+                "type": "PercentStat",
+                "value": 16
+            }
+        ]
     }
 ]

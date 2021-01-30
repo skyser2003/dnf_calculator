@@ -420,5 +420,57 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "ruination_hell",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "AllAttack",
+                        "value": 6
+                    },
+                    {
+                        "type": "PercentPhyMagIndAttack",
+                        "value": 16
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 6
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AllElementsUp",
+                        "value": 66
+                    }
+                ],
+                "skill_options": [
+                    {
+                        "type": "LevelIncrease",
+                        "level_range": "1-85",
+                        "value": 1
+                    },
+                    {
+                        "type": "LevelIncrease",
+                        "level_range": "100-100",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 46
+                    }
+                ]
+            }
+        ]
     }
 ]
