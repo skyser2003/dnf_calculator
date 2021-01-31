@@ -582,18 +582,9 @@
                 ],
                 "skill_options": [
                     {
-                        "type": "CooldownReduce",
-                        "level_range": "1-45",
+                        "type": "CooldownReduceExceptUltimate",
+                        "level_range": "1-100",
                         "value": 15
-                    },
-                    {
-                        "type": "CooldownReduce",
-                        "level_range": "55-80",
-                        "value": 15
-                    },
-                    {
-                        "type": "CooldownReduce",
-                        "level_range": "90-95"
                     }
                 ]
             },
