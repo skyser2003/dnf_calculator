@@ -500,7 +500,7 @@
                 "skill_options": [
                     {
                         "type": "CooldownReduce",
-                        "level_range": "1-45",
+                        "level_range": "1-49",
                         "value": 20,
                         "options": {
                             "replace": {
@@ -510,7 +510,7 @@
                     },
                     {
                         "type": "CooldownReduce",
-                        "level_range": "55-80",
+                        "level_range": "51-80",
                         "value": 20,
                         "options": {
                             "replace": {
