@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "skill_option.h"
 
-std::regex levelRegex(R"((\d+)\s*-\s*(\d+))");
+std::regex levelRegex(R"((\d+)(\s*-\s*(\d+)){0,1})");
 
 SkillOption::SkillOption(const nlohmann::json& json)
 {
@@ -15,18 +15,15 @@ SkillOption::SkillOption(const nlohmann::json& json)
 	std::smatch levelMatch;
 	if (std::regex_match(levelRange, levelMatch, levelRegex))
 	{
-		auto beginLevel = std::stoi(levelMatch[1]);
-		auto endLevel = std::stoi(levelMatch[2]);
+		beginLevel_ = std::stoi(levelMatch[1]);
 
-		if (beginLevel == 1)
+		if (levelMatch[3].matched == false)
 		{
-			this->levels.push_back(beginLevel);
-			beginLevel = 5;
+			endLevel_ = beginLevel_;
 		}
-
-		for (auto i = beginLevel; i <= endLevel; i += 5)
+		else
 		{
-			this->levels.push_back(i);
+			endLevel_ = std::stoi(levelMatch[3]);
 		}
 	}
 }

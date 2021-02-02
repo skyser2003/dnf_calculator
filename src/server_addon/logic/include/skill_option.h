@@ -7,6 +7,7 @@ public:
 
 private:
 	SkillOptionType type;
-	std::vector<int> levels;
+	int beginLevel_;
+	int endLevel_;
 	int value;
 };

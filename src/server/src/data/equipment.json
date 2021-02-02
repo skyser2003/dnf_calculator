@@ -387,7 +387,7 @@
             },
             {
                 "type": "LevelIncrease",
-                "level_range": "100-100",
+                "level_range": "100",
                 "value": 1
             }
         ]
@@ -895,7 +895,7 @@
         "skill_options": [
             {
                 "type": "LevelIncrease",
-                "level_range": "45-45",
+                "level_range": "45",
                 "value": 2
             }
         ]
@@ -918,7 +918,7 @@
         "skill_options": [
             {
                 "type": "LevelIncrease",
-                "level_range": "45-45",
+                "level_range": "45",
                 "value": 2
             }
         ]
@@ -931,7 +931,7 @@
         "skill_options": [
             {
                 "type": "LevelIncrease",
-                "level_range": "35-35",
+                "level_range": "35",
                 "value": 2
             }
         ],
@@ -954,7 +954,7 @@
         "skill_options": [
             {
                 "type": "LevelIncrease",
-                "level_range": "60-60",
+                "level_range": "60",
                 "value": 2
             }
         ]
@@ -973,7 +973,7 @@
         "skill_options": [
             {
                 "type": "LevelIncrease",
-                "level_range": "60-60",
+                "level_range": "60",
                 "value": 2
             }
         ]
@@ -992,7 +992,7 @@
         "skill_options": [
             {
                 "type": "LevelIncrease",
-                "level_range": "70-70",
+                "level_range": "70",
                 "value": 2
             }
         ]
@@ -1206,7 +1206,7 @@
             },
             {
                 "type": "LevelIncrease",
-                "level_range": "100-100",
+                "level_range": "100",
                 "value": 1
             }
         ]
