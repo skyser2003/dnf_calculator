@@ -25,6 +25,7 @@ enum class DamageOptionType
 enum class SkillOptionType
 {
 	LevelIncrease,
+	DamageIncrease,
 	CooldownReduce,
 	CooldownReduceExceptUltimate,
 	CooldownRecoveryUp
@@ -57,6 +58,7 @@ enum class FinalDamageOptionType
 enum class FinalSkillOptionType
 {
 	LevelIncrease,
+	DamageIncrease,
 	CooldownReduce
 };
 
@@ -87,6 +89,7 @@ const auto damageTypeMap = std::map<std::string, DamageOptionType>{
 
 const auto skillTypeMap = std::map<std::string, SkillOptionType>{
 	SkillTypePair(LevelIncrease),
+	SkillTypePair(DamageIncrease),
 	SkillTypePair(CooldownReduce),
 	SkillTypePair(CooldownReduceExceptUltimate),
 	SkillTypePair(CooldownRecoveryUp)
