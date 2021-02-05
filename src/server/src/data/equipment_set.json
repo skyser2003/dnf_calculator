@@ -586,5 +586,41 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "flowing_path",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "PercentStat",
+                        "value": 31
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AllAttack",
+                        "value": 32
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 22
+                    },
+                    {
+                        "type": "PercentPhyMagIndAttack",
+                        "value": 23
+                    }
+                ]
+            }
+        ]
     }
 ]

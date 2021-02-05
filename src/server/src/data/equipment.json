@@ -1292,5 +1292,172 @@
                 "value": 35
             }
         ]
+    },
+    {
+        "id": "flowing_path_top",
+        "type": "top",
+        "set_id": "flowing_path",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 32
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "45",
+                "skill_id": "wormhole",
+                "value": 100
+            },
+            {
+                "type": "DamageIncrease",
+                "level_range": "45",
+                "skill_id": "wormhole",
+                "value": -30
+            }
+        ]
+    },
+    {
+        "id": "flowing_path_mythic_top",
+        "type": "top",
+        "set_id": "flowing_path",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 30
+            },
+            {
+                "type": "BonusDamage",
+                "value": 5
+            },
+            {
+                "type": "PercentStat",
+                "value": 8
+            },
+            {
+                "type": "AllAttack",
+                "value": 6
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "45",
+                "skill_id": "wormhole",
+                "value": 100
+            },
+            {
+                "type": "DamageIncrease",
+                "level_range": "45",
+                "skill_id": "wormhole",
+                "value": -30
+            },
+            {
+                "type": "LevelIncrease",
+                "level_range": "1-45",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": "flowing_path_bottom",
+        "type": "bottom",
+        "set_id": "flowing_path",
+        "is_mythic": false,
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "40",
+                "value": 100
+            },
+            {
+                "type": "DamageIncrease",
+                "level_range": "40",
+                "value": -30
+            }
+        ],
+        "swappable_option": {
+            "type": "AdditionalCriAttackDamage",
+            "value": 32
+        }
+    },
+    {
+        "id": "flowing_path_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "flowing_path",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 29
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "35",
+                "value": 100
+            },
+            {
+                "type": "DamageIncrease",
+                "level_range": "35",
+                "value": -30
+            }
+        ]
+    },
+    {
+        "id": "flowing_path_belt",
+        "type": "belt",
+        "set_id": "flowing_path",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 32
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "30",
+                "value": 100
+            },
+            {
+                "type": "DamageIncrease",
+                "level_range": "30",
+                "value": -30
+            }
+        ]
+    },
+    {
+        "id": "flowing_path_shoes",
+        "type": "shoes",
+        "set_id": "flowing_path",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "CriChance",
+                "value": 5
+            },
+            {
+                "type": "BonusDamage",
+                "value": 32
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "25",
+                "value": 100
+            },
+            {
+                "type": "DamageIncrease",
+                "level_range": "25",
+                "value": -30
+            }
+        ]
     }
 ]
