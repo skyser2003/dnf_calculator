@@ -76,8 +76,8 @@
                         "value": 5
                     },
                     {
-                        "type": "PercentStat",
-                        "value": 13
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 19
                     }
                 ],
                 "skill_options": [
@@ -102,12 +102,12 @@
                 "piece": 2,
                 "damage_options": [
                     {
-                        "type": "ExtrinsicAttackDamage",
-                        "value": 14
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 17
                     },
                     {
                         "type": "AllAttack",
-                        "value": 14
+                        "value": 10
                     }
                 ]
             },
@@ -115,12 +115,12 @@
                 "piece": 3,
                 "damage_options": [
                     {
-                        "type": "AdditionalAttackDamage",
-                        "value": 22
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 15
                     },
                     {
-                        "type": "AdditionalCriAttackDamage",
-                        "value": 10
+                        "type": "PercentPhyMagIndAttack",
+                        "value": 11
                     }
                 ]
             },
@@ -128,24 +128,8 @@
                 "piece": 5,
                 "damage_options": [
                     {
-                        "type": "CriChance",
-                        "value": 5
-                    },
-                    {
-                        "type": "PercentStat",
-                        "value": 13
-                    }
-                ],
-                "skill_options": [
-                    {
-                        "type": "LevelIncrease",
-                        "level_range": "1-85",
-                        "value": 2
-                    },
-                    {
-                        "type": "LevelIncrease",
-                        "level_range": "100",
-                        "value": 2
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 40
                     }
                 ]
             }
