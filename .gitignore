@@ -8,6 +8,7 @@ node_modules/
 x64/
 Debug/
 Release/
+*.user
 
 # Visual Studio Code
 .vscode/
