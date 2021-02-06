@@ -622,5 +622,49 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "crossroad_choice",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "AdditionalAttackDamage",
+                        "value": 15
+                    },
+                    {
+                        "type": "BonusDamage",
+                        "value": 13
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "PercentStat",
+                        "value": 12
+                    },
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 17
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 12
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 27
+                    }
+                ]
+            }
+        ]
     }
 ]

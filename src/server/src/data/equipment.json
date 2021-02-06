@@ -1459,5 +1459,169 @@
                 "value": -30
             }
         ]
+    },
+    {
+        "id": "crossroad_choice_top",
+        "type": "top",
+        "set_id": "crossroad_choice",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 11
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 21
+            }
+        ]
+    },
+    {
+        "id": "crossroad_choice_mythic_top",
+        "type": "top",
+        "set_id": "crossroad_choice",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 6
+            },
+            {
+                "type": "PercentStat",
+                "value": 21
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 5
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 5
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "AllAttack",
+                "value": 6
+            },
+            {
+                "type": "BonusDamage",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "crossroad_choice_bottom",
+        "type": "bottom",
+        "set_id": "crossroad_choice",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 2
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 2
+            },
+            {
+                "type": "AllAttack",
+                "value": 2
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 2
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 2
+            }
+        ],
+        "swappable_option": {
+            "type": "BonusDamage",
+            "value": 25
+        }
+    },
+    {
+        "id": "crossroad_choice_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "crossroad_choice",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 34
+            }
+        ]
+    },
+    {
+        "id": "crossroad_choice_belt",
+        "type": "belt",
+        "set_id": "crossroad_choice",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 20
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "DamageIncrease",
+                "level_range": "50",
+                "value": 25
+            },
+            {
+                "type": "DamageIncrease",
+                "level_range": "85",
+                "value": 45
+            },
+            {
+                "type": "CooldownReduce",
+                "level_range": "85",
+                "value": 20
+            },
+            {
+                "type": "DamageIncrease",
+                "level_range": "100",
+                "value": 13
+            }
+        ]
+    },
+    {
+        "id": "crossroad_choice_shoes",
+        "type": "shoes",
+        "set_id": "crossroad_choice",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "BonusDamage",
+                "value": 17
+            }
+        ],
+        "extra_options": [
+            {
+                "type": "TalismanCooldownReduce",
+                "slot": 0,
+                "value": 30
+            },
+            {
+                "type": "TalismanDamageIncrease",
+                "slot": 0,
+                "value": 55
+            },
+            {
+                "type": "TalismanCooldownReduce",
+                "slot": 1,
+                "value": 25
+            },
+            {
+                "type": "TalismanDamageIncrease",
+                "slot": 1,
+                "value": 45
+            }
+        ]
     }
 ]
