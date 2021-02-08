@@ -37,7 +37,9 @@ enum class ExtraOptionType
 	MoveSpeed,
 	CastSpeed,
 	PartialSuperArmor,
-	FullSuperArmor
+	FullSuperArmor,
+	TalismanCooldownReduce,
+	TalismanDamageIncrease
 };
 
 enum class FinalDamageOptionType
@@ -100,5 +102,7 @@ const auto extraTypeMap = std::map<std::string, ExtraOptionType>{
 	ExtraTypePair(MoveSpeed),
 	ExtraTypePair(CastSpeed),
 	ExtraTypePair(PartialSuperArmor),
-	ExtraTypePair(FullSuperArmor)
+	ExtraTypePair(FullSuperArmor),
+	ExtraTypePair(TalismanCooldownReduce),
+	ExtraTypePair(TalismanDamageIncrease)
 };

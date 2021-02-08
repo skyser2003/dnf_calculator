@@ -4,11 +4,15 @@ class DamageOption;
 class SkillOption;
 class SwappableOption;
 
+class TalismanExtraOption;
+
 class OptionContainer
 {
 protected:
 	std::vector<std::shared_ptr<DamageOption>> damageOptions_;
 	std::vector<std::shared_ptr<SkillOption>> skillOptions_;
+
+	std::vector<std::shared_ptr<TalismanExtraOption>> talismanOptions_;
 
 public:
 	OptionContainer(const nlohmann::json& json);
