@@ -666,5 +666,57 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "mother_nature",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "PercentStat",
+                        "value": 16
+                    },
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 15
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AdditionalAttackDamage",
+                        "value": 15
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 13
+                    }
+                ]
+            },
+            {
+                "piece": 5,
+                "damage_options": [
+                    {
+                        "type": "AllElementsUp",
+                        "value": 64
+                    },
+                    {
+                        "type": "CriChance",
+                        "value": 10
+                    },
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 10
+                    },
+                    {
+                        "type": "AllAttack",
+                        "value": 11
+                    }
+                ]
+            }
+        ]
     }
 ]

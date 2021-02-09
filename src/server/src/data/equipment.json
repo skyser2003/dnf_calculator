@@ -1623,5 +1623,117 @@
                 "value": 45
             }
         ]
+    },
+    {
+        "id": "mother_nature_top",
+        "type": "top",
+        "set_id": "mother_nature",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 28
+            },
+            {
+                "type": "AllElementsUp",
+                "value": 24
+            }
+        ]
+    },
+    {
+        "id": "mother_nature_mythic_top",
+        "type": "top",
+        "set_id": "mother_nature",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 32
+            },
+            {
+                "type": "AllElementsUp",
+                "value": 24
+            },
+            {
+                "type": "PercentStat",
+                "value": 12
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 9
+            },
+            {
+                "type": "AllAttack",
+                "value": 9
+            }
+        ]
+    },
+    {
+        "id": "mother_nature_bottom",
+        "type": "bottom",
+        "set_id": "mother_nature",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "CriChance",
+                "value": 10
+            },
+            {
+                "type": "ShadowElementUp",
+                "value": 24
+            }
+        ],
+        "swappable_option": {
+            "type": "AllAttack",
+            "value": 32
+        }
+    },
+    {
+        "id": "mother_nature_head_shoulder",
+        "type": "head_shoulder",
+        "set_id": "mother_nature",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 32
+            },
+            {
+                "type": "FireElementUp",
+                "value": 24
+            }
+        ]
+    },
+    {
+        "id": "mother_nature_belt",
+        "type": "belt",
+        "set_id": "mother_nature",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 32
+            },
+            {
+                "type": "WaterElementUp",
+                "value": 24
+            }
+        ]
+    },
+    {
+        "id": "mother_nature_shoes",
+        "type": "shoes",
+        "set_id": "mother_nature",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 32
+            },
+            {
+                "type": "LightElementUp",
+                "value": 24
+            }
+        ]
     }
 ]
