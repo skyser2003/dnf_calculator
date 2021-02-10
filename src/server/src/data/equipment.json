@@ -1735,5 +1735,85 @@
                 "value": 24
             }
         ]
+    },
+    {
+        "id": "elementalist_bracelet",
+        "type": "bracelet",
+        "set_id": "elementalist",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 38
+            },
+            {
+                "type": "BonusDamage",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "id": "elementalist_mythic_bracelet",
+        "type": "bracelet",
+        "set_id": "elementalist",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 38
+            },
+            {
+                "type": "BonusDamage",
+                "value": 20
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 13
+            },
+            {
+                "type": "FixedStat",
+                "value": 160
+            },
+            {
+                "type": "AllAttack",
+                "value": 12
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "elementalist_necklace",
+        "type": "necklace",
+        "set_id": "elementalist",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 38
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 27
+            }
+        ]
+    },
+    {
+        "id": "elementalist_ring",
+        "type": "ring",
+        "set_id": "elementalist",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 38
+            }
+        ],
+        "swappable_option": {
+            "type": "AllAttack",
+            "value": 27
+        }
     }
 ]
