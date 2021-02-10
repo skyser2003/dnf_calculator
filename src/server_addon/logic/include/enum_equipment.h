@@ -72,7 +72,19 @@ enum class EquipmentSetType
 	AbyssalSeeker,
 	DimensionTraveler,
 	FatefulDice,
-	ArynTragedy
+	ArynTragedy,
+
+	// Accessories
+	Elementalist,
+	BreakOfDawn,
+	AncientConjuration,
+	LuckyTriangle,
+
+	// Special equipments
+	NormalizingSynchro,
+	WarGod,
+	TimeWar,
+	Annunciation
 };
 
 const auto equipmentTypeMap = std::map<std::string, EquipmentType>{
@@ -123,5 +135,15 @@ const auto equipmentSetTypeMap = std::map<std::string, EquipmentSetType>{
 	{"abyssal_seeker", EquipmentSetType::AbyssalSeeker},
 	{"dimension_traveler", EquipmentSetType::DimensionTraveler},
 	{"fateful_dice", EquipmentSetType::FatefulDice},
-	{"aryn_tragedy", EquipmentSetType::ArynTragedy}
+	{"aryn_tragedy", EquipmentSetType::ArynTragedy},
+
+	{"elementalist", EquipmentSetType::Elementalist},
+	{"break_of_dawn", EquipmentSetType::BreakOfDawn},
+	{"ancient_conjuration", EquipmentSetType::AncientConjuration},
+	{"lucky_triangle", EquipmentSetType::LuckyTriangle},
+
+	{"normalizing_synchro", EquipmentSetType::NormalizingSynchro},
+	{"war_god", EquipmentSetType::WarGod},
+	{"time_war", EquipmentSetType::TimeWar},
+	{"annunciation", EquipmentSetType::Annunciation},
 };
