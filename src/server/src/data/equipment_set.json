@@ -756,5 +756,43 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "break_of_dawn",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "CriChance",
+                        "value": 5
+                    },
+                    {
+                        "type": "AllAttack",
+                        "value": 10
+                    },
+                    {
+                        "type": "PercentPhyMagIndAttack",
+                        "value": 10
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "ElementalBonusDamage",
+                        "value": 10
+                    }
+                ],
+                "skill_options": [
+                    {
+                        "type": "LevelIncrease",
+                        "level_range": "100",
+                        "value": 1
+                    }
+                ]
+            }
+        ]
     }
 ]

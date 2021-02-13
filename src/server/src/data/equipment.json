@@ -1815,5 +1815,169 @@
             "type": "AllAttack",
             "value": 27
         }
+    },
+    {
+        "id": "break_of_dawn_bracelet",
+        "type": "bracelet",
+        "set_id": "break_of_dawn",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 28
+            },
+            {
+                "type": "AllAttack",
+                "value": 6
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 5
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 10,
+                "options": {
+                    "dawn_value": "reinforcement_level"
+                }
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "15-30",
+                "value": 30
+            },
+            {
+                "type": "LevelIncrease",
+                "level_range": "1-48",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": "break_of_dawn_mythic_bracelet",
+        "type": "bracelet",
+        "set_id": "break_of_dawn",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 28
+            },
+            {
+                "type": "AllAttack",
+                "value": 6
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 5
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 10,
+                "options": {
+                    "dawn_value": "reinforcement_level"
+                }
+            },
+            {
+                "type": "FixedPhyMagIndAttack",
+                "value": 110
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 10
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 11
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "15-30",
+                "value": 30
+            },
+            {
+                "type": "LevelIncrease",
+                "level_range": "1-48",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": "break_of_dawn_necklace",
+        "type": "necklace",
+        "set_id": "break_of_dawn",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 28
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 6
+            },
+            {
+                "type": "PercentStat",
+                "value": 5
+            },
+            {
+                "type": "PercentStat",
+                "value": 10,
+                "options": {
+                    "dawn_value": "reinforcement_level"
+                }
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "35-45",
+                "value": 30
+            },
+            {
+                "type": "LevelIncrease",
+                "level_range": "50-70",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": "break_of_dawn_ring",
+        "type": "ring",
+        "set_id": "break_of_dawn",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 30
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 10,
+                "options": {
+                    "dawn_value": "reinforcement_level"
+                }
+            }
+        ],
+        "skill_options": [
+            {
+                "type": "CooldownRecoveryUp",
+                "level_range": "60-80",
+                "value": 30
+            },
+            {
+                "type": "LevelIncrease",
+                "level_range": "75-85",
+                "value": 1
+            }
+        ],
+        "swappable_option": {
+            "type": "AdditionalAttackDamage",
+            "value": 5
+        }
     }
 ]
