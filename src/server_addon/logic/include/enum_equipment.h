@@ -145,5 +145,5 @@ const auto equipmentSetTypeMap = std::map<std::string, EquipmentSetType>{
 	{"normalizing_synchro", EquipmentSetType::NormalizingSynchro},
 	{"war_god", EquipmentSetType::WarGod},
 	{"time_war", EquipmentSetType::TimeWar},
-	{"annunciation", EquipmentSetType::Annunciation},
+	{"annunciation", EquipmentSetType::Annunciation}
 };
