@@ -1979,5 +1979,101 @@
             "type": "AdditionalAttackDamage",
             "value": 5
         }
+    },
+    {
+        "id": "ancient_conjuration_bracelet",
+        "type": "bracelet",
+        "set_id": "ancient_conjuration",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 25
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 20
+            },
+            {
+                "type": "BonusDamage",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "ancient_conjuration_mythic_bracelet",
+        "type": "bracelet",
+        "set_id": "ancient_conjuration",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 25
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 25
+            },
+            {
+                "type": "BonusDamage",
+                "value": 6
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 3
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 6
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 9
+            },
+            {
+                "type": "PercentStat",
+                "value": 6
+            }
+        ]
+    },
+    {
+        "id": "ancient_conjuration_necklace",
+        "type": "necklace",
+        "set_id": "ancient_conjuration",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 25
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 20
+            },
+            {
+                "type": "BonusDamage",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "ancient_conjuration_ring",
+        "type": "ring",
+        "set_id": "ancient_conjuration",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AllElementsUp",
+                "value": 25
+            },
+            {
+                "type": "BonusDamage",
+                "value": 12
+            }
+        ],
+        "swappable_option": {
+            "type": "PercentStat",
+            "value": 20
+        }
     }
 ]

@@ -794,5 +794,32 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "ancient_conjuration",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "PercentStat",
+                        "value": 10
+                    },
+                    {
+                        "type": "PercentPhyMagIndAttack",
+                        "value": 14
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "AdditionalCriAttackDamage",
+                        "value": 20
+                    }
+                ]
+            }
+        ]
     }
 ]
