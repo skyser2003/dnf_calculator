@@ -2203,5 +2203,117 @@
             "type": "AdditionalCriAttackDamage",
             "value": 7
         }
+    },
+    {
+        "id": "normalizing_synchro_earrings",
+        "type": "earrings",
+        "set_id": "normalizing_synchro",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 12
+            },
+            {
+                "type": "AllAttack",
+                "value": 7
+            },
+            {
+                "type": "BonusDamage",
+                "value": 10,
+                "options": {
+                    "on_equipped": "normalizing_synchro_sub_equipment"
+                }
+            },
+            {
+                "type": "AllElementsUp",
+                "value": 40,
+                "options": {
+                    "on_equipped": "normalizing_synchro_magic_stone"
+                }
+            }
+        ]
+    },
+    {
+        "id": "normalizing_synchro_mythic_earrings",
+        "type": "earrings",
+        "set_id": "normalizing_synchro",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 12
+            },
+            {
+                "type": "AllAttack",
+                "value": 7
+            },
+            {
+                "type": "BonusDamage",
+                "value": 10,
+                "options": {
+                    "on_equipped": "normalizing_synchro_sub_equipment"
+                }
+            },
+            {
+                "type": "AllElementsUp",
+                "value": 40,
+                "options": {
+                    "on_equipped": "normalizing_synchro_magic_stone"
+                }
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 12
+            },
+            {
+                "type": "FixedStat",
+                "value": 220
+            },
+            {
+                "type": "BonusDamage",
+                "value": 12
+            }
+        ]
+    },
+    {
+        "id": "normalizing_synchro_sub_equipment",
+        "type": "sub_equipment",
+        "set_id": "normalizing_synchro",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 20
+            }
+        ],
+        "swappable_option": {
+            "type": "PercentStat",
+            "value": 16
+        }
+    },
+    {
+        "id": "normalizing_synchro_magic_stone",
+        "type": "magic_stone",
+        "set_id": "normalizing_synchro",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 24
+            },
+            {
+                "type": "AllAttack",
+                "value": 13
+            }
+        ]
     }
 ]
