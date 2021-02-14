@@ -821,5 +821,36 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "lucky_triangle",
+        "set_options": [
+            {
+                "piece": 2,
+                "damage_options": [
+                    {
+                        "type": "FixedPhyMagIndAttack",
+                        "value": 77
+                    },
+                    {
+                        "type": "AllElementsUp",
+                        "value": 77
+                    },
+                    {
+                        "type": "CriChance",
+                        "value": 7
+                    }
+                ]
+            },
+            {
+                "piece": 3,
+                "damage_options": [
+                    {
+                        "type": "ExtrinsicAttackDamage",
+                        "value": 29.15
+                    }
+                ]
+            }
+        ]
     }
 ]

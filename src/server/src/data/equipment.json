@@ -2075,5 +2075,133 @@
             "type": "PercentStat",
             "value": 20
         }
+    },
+    {
+        "id": "lucky_triangle_bracelet",
+        "type": "bracelet",
+        "set_id": "lucky_triangle",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "PercentStat",
+                "value": 7
+            },
+            {
+                "type": "BonusDamage",
+                "value": 7
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 7
+            }
+        ]
+    },
+    {
+        "id": "lucky_triangle_mythic_bracelet",
+        "type": "bracelet",
+        "set_id": "lucky_triangle",
+        "is_mythic": true,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "PercentStat",
+                "value": 7
+            },
+            {
+                "type": "BonusDamage",
+                "value": 7
+            },
+            {
+                "type": "ExtrinsicAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 4
+            },
+            {
+                "type": "PercentStat",
+                "value": 10
+            },
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 3
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 8
+            }
+        ]
+    },
+    {
+        "id": "lucky_triangle_necklace",
+        "type": "necklace",
+        "set_id": "lucky_triangle",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "AdditionalCriAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "PercentStat",
+                "value": 7
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 7
+            },
+            {
+                "type": "AllAttack",
+                "value": 7
+            }
+        ]
+    },
+    {
+        "id": "lucky_triangle_ring",
+        "type": "ring",
+        "set_id": "lucky_triangle",
+        "is_mythic": false,
+        "damage_options": [
+            {
+                "type": "AdditionalAttackDamage",
+                "value": 7
+            },
+            {
+                "type": "PercentStat",
+                "value": 7
+            },
+            {
+                "type": "PercentPhyMagIndAttack",
+                "value": 7
+            },
+            {
+                "type": "AllAttack",
+                "value": 7
+            }
+        ],
+        "swappable_option": {
+            "type": "AdditionalCriAttackDamage",
+            "value": 7
+        }
     }
 ]
